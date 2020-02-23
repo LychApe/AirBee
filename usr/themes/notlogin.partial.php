@@ -231,10 +231,11 @@ echo "<table class='mdui-table mdui-shadow-0' style='border-radius: 3px;'>";
   
 <footer class="foot mdui-text-center  AB-footer-morden">
 <div class="mdui-typo">
-<p>Powered by AirBee 0.1</p>
-<br/>
 Copyright © 2020 <a href="https://www.lychape.cn">LychApe Studios</a>
 </div>
+Powered by AirBee 0.1
+<br/>
+<a href='https://gitee.com/LychApe/AirBee/stargazers'><img src='https://gitee.com/LychApe/AirBee/badge/star.svg?theme=dark' alt='star'></img></a>
 </footer>
   
     

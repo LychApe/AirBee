@@ -1,0 +1,42 @@
+.Back-E1{
+  padding-top: 20px;
+  padding-bottom: 60px;
+  background: linear-gradient(to right, #7f7fd5, #86a8e7, #91eae4);
+}
+.Back-E2{
+ border-radius: 18px;
+}
+.comment-section {
+ width: 145px;
+ top: 20%;
+ transform: translateY(-25%);
+}
+.SetButton{
+ transform: translateY(-47.2%);
+ width: 95px;
+}
+.detail-info {
+    overflow: hidden;
+    padding: 10px 20px;
+    margin: 0;
+    border-top: 1px dashed #e0e0e0;
+    color: #626262;
+    font-size: 14px;
+    line-height: 19px;
+    background-color: #f6f6f6;
+}
+.foot {
+    box-sizing: border-box;
+    padding: 20px 0;
+    padding-right: 20px;
+    padding-left: 20px;
+    width: 100%;
+    background-color: #f0f0f0;
+    color: #787878;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 25px;
+}
+.foot.AB-footer-morden {
+    padding: 30px 0;
+}
