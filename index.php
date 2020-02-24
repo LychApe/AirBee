@@ -12,6 +12,6 @@ AirBee_PathM::Go();
 
 #页面参数赋值
 $page['body'] = 'mdui-drawer-body-left mdui-appbar-with-toolbar mdui-theme-primary-indigo mdui-theme-accent-pink';
-$body = "notlogin.partial.php";
+$body = "login.partial.php";
 #载入模板
 require(Usr_T_PATH.'/NotLogin/main.php');
