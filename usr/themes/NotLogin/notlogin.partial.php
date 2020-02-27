@@ -11,7 +11,8 @@
          </div>
     
       <div class="mdui-col-xs-12">
-          <img class="mdui-img-circle mdui-center" src="https://q1.qlogo.cn/g?b=qq&nk=1091044631&s=140" />
+	<img class="mdui-img-circle mdui-center" src="https://s6.cccc.ac.cn/2020/02/27/b6b36f97f9ab3.png" style="width: 140px;
+	    height: 140px;"/>
       </div>
     </div>
     

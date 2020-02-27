@@ -44,7 +44,7 @@
                   </li>
                 </a>
                 
-                <a href="ClassSchedule.php">
+                <a href="register.php">
                     <li class="mdui-list-item mdui-ripple">
                         <i class="mdui-list-item-icon mdui-icon material-icons">group_add</i>
                         <div class="mdui-list-item-content">注册</div>
