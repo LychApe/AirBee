@@ -60,6 +60,12 @@ class User extends AirBee_DB{
 		}
 	}
 	
+	# Check_cf() 检查是否重复
+	public function Check_cf($sql)
+	{	
+		parent::numRows($sql);
+	}
+	
 	# Modify($username,$password,$group,$email,$qq) 修改用户
 	public function Modify($username,$password,$group,$email,$qq){
 	    if($user == "root"){

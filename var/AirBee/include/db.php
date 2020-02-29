@@ -44,7 +44,7 @@ class AirBee_DB
 	
 	/**
 	 * 插入操作
-	 * $xxxx ->insert($args);
+	 * $xxxx -> insert($args);
 	 **/
 	public function insert($args)
 	{
@@ -61,7 +61,7 @@ class AirBee_DB
 	
     /**
 	 * 删除操作
-	 * $xxxx ->delete($obj);
+	 * $xxxx -> delete($obj);
 	 **/
 	public function delete($obj)
 	{
@@ -73,7 +73,7 @@ class AirBee_DB
 	
     /**
 	 * 更改操作
-	 * $xxxx ->change($obj);
+	 * $xxxx -> change($obj);
 	 **/
 	public function change($args,$obj)
 	{
@@ -101,7 +101,7 @@ class AirBee_DB
 
     /**
 	 * 查询操作_ONE
-	 * $xxxx ->fetch_one($key,$value);
+	 * $xxxx -> fetch_one($key,$value);
 	 * 返回单个结果
 	 **/
 	public function fetch_one($key,$value)
@@ -114,7 +114,7 @@ class AirBee_DB
 	
     /**
 	 * 查询操作_BY
-	 * $xxxx ->fetch_one($key,$value);
+	 * $xxxx -> fetch_one($key,$value);
 	 * 返回多个结果
 	 **/
 	public function fetch_by($key,$value)
@@ -122,6 +122,22 @@ class AirBee_DB
 	    $sentence = "SELECT * FROM $this->table WHERE `$key`=:$key";
 	    return $this->fetch($sentence,array($key => $value));
 	}
+	
+    /**
+     * 函数返回结果集中行的数目
+     * @param  string $sql
+     * @return int
+     */
+
+    public function numRows($sql) {
+		$res = $this->db->prepare($sql);
+		$res->execute();
+		return $res->rowCount();
+    }
 	 
 }
+#$db = new AirBee_DB();
+#if($db->numRows("SELECT * FROM `user` WHERE `username` = 'admin'")>0){
+#    			echo "<script>alert('用户名已经存在！')</script>";
+#}
 ?>
