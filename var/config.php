@@ -1,6 +1,6 @@
 <?php
-$GLOBALS['host']="127.0.0.1";
-$GLOBALS['username']="";
-$GLOBALS['password']="";
-$GLOBALS['database']="";
+$GLOBALS['host']="localhost";
+$GLOBALS['username']="AirBee";
+$GLOBALS['password']="NT8eJzteYRmxAr6X";
+$GLOBALS['database']="AirBee";
 $GLOBALS['url']="https://airbee.lychape.cn/AirBee";

@@ -67,6 +67,7 @@
        background-repeat:no-repeat;
         }
     </style>
+<br/>
     <div class="mdui-container">
         <div class="mdui-row">
             <div class="mdui-col-xs-1 mdui-col-sm-3"></div>
@@ -75,43 +76,44 @@
                 <div class="mdui-card pec-Bor mdui-shadow-12 body-tm">
                     <div class="mdui-card-primary">
                         <div class="mdui-card-primary-title mdui-text-center">Register</div>
+                        <a class="mdui-text-center"><?php echo Register(); ?></a>
                     </div>
-                <form method="post">
+                <form action="register.php" method="POST">
                     <div class="mdui-card-content detail-info">
                         <div class="mdui-textfield">
                             <i class="mdui-icon material-icons">account_circle</i>
-                            <label class="mdui-textfield-label">ID</label>
-                            <input class="mdui-textfield-input" type="text" name="username" maxlength="50"/>
+                            <label class="mdui-textfield-label">Username</label>
+                            <input class="mdui-textfield-input" type="text" id="username" name="username" maxlength="50"/>
                             <div class="mdui-textfield-error">用户名不能为空</div>
                         </div>
                         <div class="mdui-textfield">
                             <i class="mdui-icon material-icons">insert_emoticon</i>
                             <label class="mdui-textfield-label">QQ</label>
-                            <input class="mdui-textfield-input" type="text" name="qq"/>
+                            <input class="mdui-textfield-input" type="text" id="qq" name="qq"/>
                             <div class="mdui-textfield-error">QQ不能为空</div>
                         </div>
                         <div class="mdui-textfield">
                             <i class="mdui-icon material-icons">email</i>
                             <label class="mdui-textfield-label">Email</label>
-                            <input class="mdui-textfield-input" type="email" name="email"/>
+                            <input class="mdui-textfield-input" type="email" id="email" name="email"/>
                             <div class="mdui-textfield-error">邮箱格式错误</div>
                         </div>
                         <div class="mdui-textfield">
                             <i class="mdui-icon material-icons">lock</i>
                             <label class="mdui-textfield-label">Password</label>
-                            <input class="mdui-textfield-input" type="password" pattern="^.*(?=.{6,})(?=.*[a-z])(?=.*[A-Z]).*$" name="password1"/>
+                            <input class="mdui-textfield-input" type="password" pattern="^.*(?=.{6,})(?=.*[a-z])(?=.*[A-Z]).*$" id="password" name="password"/>
                             <div class="mdui-textfield-error">密码至少 6 位，且包含大小写字母</div>
                         </div> 
                         <div class="mdui-textfield">
                             <i class="mdui-icon material-icons">lock</i>
                             <label class="mdui-textfield-label">Password</label>
-                            <input class="mdui-textfield-input" type="password" pattern="^.*(?=.{6,})(?=.*[a-z])(?=.*[A-Z]).*$" name="password2"/>
+                            <input class="mdui-textfield-input" type="password" pattern="^.*(?=.{6,})(?=.*[a-z])(?=.*[A-Z]).*$" id="pwd_again" name="pwd_again"/>
                             <div class="mdui-textfield-error">密码至少 6 位，且包含大小写字母</div>
                         </div>
                     </div>
                     <div class="mdui-card-actions">
-                        <small><a href="register.php" class="mdui-btn mdui-ripple">有账号!快来登录吧</a></small>
-                        <button name="submit" class="mdui-btn mdui-btn-icon mdui-color-pink mdui-ripple mdui-float-right"><i class="mdui-icon material-icons">last_page</i></button>
+                        <small><a href="login.php" class="mdui-btn mdui-ripple">有账号!快来登录吧</a></small>
+                        <button name="submit" id="submit" class="mdui-btn mdui-btn-icon mdui-color-pink mdui-ripple mdui-float-right"><i class="mdui-icon material-icons">last_page</i></button>
                     </div>
                 </form>
                 </div>
