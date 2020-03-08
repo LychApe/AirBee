@@ -8,18 +8,18 @@ class User extends AirBee_DB{
         parent::__construct();
     }
     
-    # Info($user) 指定用户查询，支持用户名 id 邮箱查询
+    # Info($username) 指定用户查询，支持用户名 id 邮箱查询
 	public function Info($username)
 	{
-        $data = empty(parent::fetch_one('uid',$username))?parent::fetch_one('username',$username):parent::fetch_one('uid',$user);
+        $data = empty(parent::fetch_one('uid',$username))?parent::fetch_one('username',$username):parent::fetch_one('uid',$username);
         return empty($data)?parent::fetch_one('email',$username):$data;
 	}
 	
 	# Group($user) 获取用户分组 返回组别string
-	public function Group($user)
+	public function Group($username)
 	{
-		$group = $this->Info($user)['group'];
-		if ($user == "root"){
+		$group = $this->Info($username)['group'];
+		if ($username == "root"){
 			return "超级管理员";
 		}
 		if ($group == "admin"){
@@ -40,11 +40,11 @@ class User extends AirBee_DB{
 	
 	# Check_Group($group,\*$user=$\_SESSION['user']) 检查用户是否在指定分组 返回Bool
 	public function Check_Group(){
-		$user = isset(func_get_args()[1])?func_get_args()[1]:$_SESSION['username'];
+		$username = isset(func_get_args()[1])?func_get_args()[1]:$_SESSION['username'];
 		if (!$this->Check_Logon()){
 		    return false;
 		}
-		if ($this->Info($user)['group'] == func_get_args()[0]){
+		if ($this->Info($username)['group'] == func_get_args()[0]){
 			return true;
 		} else {
 			return false;

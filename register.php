@@ -20,14 +20,19 @@ function Register(){
     if (isset($_POST['submit'])) {
     	
     	if($_POST['username'] == "" || $_POST['password'] == "" || $_POST['pwd_again'] == "" || $_POST['email'] == "" || $_POST['qq'] == ""){
+    		#return "请确认信息完整性";
     		die("<script>alert('安全委员会:请确认信息完整性!!!');location.href='./register.php';</script>");
     	}elseif (mb_strlen($_POST['password'])<6) {
+    		#return "密码小于6位";
     		die("<script>alert('安全委员会:密码小于6位!!!');location.href='./register.php';</script>");
     	}elseif($_POST['password']!=$_POST['pwd_again']){
+    			#return "密码不一致";
 				die("<script>alert('安全委员会:密码不一致!!!');location.href='./register.php';</script>");
     	}elseif($db->numRows("SELECT * FROM `user` WHERE `username` = '{$_POST['username']}'")>0){
+    			#return "用户名已经存在";
     			echo "<script>alert('用户名已经存在！')</script>";
     	}elseif($db->numRows("SELECT * FROM `user` WHERE `email` = '{$_POST['email']}'")>0){
+    			#return "邮箱已经存在";
     			echo "<script>alert('邮箱已经存在！')</script>";
     	}else{
     		$username = $_POST['username'];

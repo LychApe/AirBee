@@ -75,24 +75,25 @@
             <div class="mdui-col-xs-10 mdui-col-sm-6">
                 <div class="mdui-card pec-Bor mdui-shadow-12 body-tm">
                     <div class="mdui-card-primary">
+                	<form action="login.php" method="POST">
                         <div class="mdui-card-primary-title mdui-text-center">Login</div>
+                        <a class="mdui-text-center"><?php echo login(); ?></a>
                     </div>
-                <form method="post">
                     <div class="mdui-card-content detail-info">
                         <div class="mdui-textfield">
                             <i class="mdui-icon material-icons">account_circle</i>
                             <label class="mdui-textfield-label">ID</label>
-                            <input class="mdui-textfield-input" type="text" name="username"/>
+                            <input class="mdui-textfield-input" type="text" name="username" id="username"/>
                         </div>
                         <div class="mdui-textfield">
                             <i class="mdui-icon material-icons">lock</i>
                             <label class="mdui-textfield-label">Password</label>
-                            <input class="mdui-textfield-input" type="password" name="password"/>
+                            <input class="mdui-textfield-input" type="password" name="password" id="password"/>
                         </div>
                     </div>
                     <div class="mdui-card-actions">
                         <small><a href="register.php" class="mdui-btn mdui-ripple">还没有账号？快来注册</a></small>
-                        <button name="submit" class="mdui-btn mdui-btn-icon mdui-color-pink mdui-ripple mdui-float-right"><i class="mdui-icon material-icons">last_page</i></button>
+                        <button name="submit" id="submit" class="mdui-btn mdui-btn-icon mdui-color-pink mdui-ripple mdui-float-right"><i class="mdui-icon material-icons">last_page</i></button>
                     </div>
                 </form>
                 </div>
