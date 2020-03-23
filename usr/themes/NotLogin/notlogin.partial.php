@@ -112,51 +112,300 @@
         </div>
       </div>
 
-<br>
-<div class="mdui-container">
-<div class="mdui-valign">
-  <div class="mdui-center" style="border-radius: 15px;"><iframe frameborder="no" border="15" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=31814005&auto=0&height=66" ></iframe></div>
-</div>	
-<br>	
+<br/>
+<br/>
 
-<div class="mdui-table-fluid mdui-hidden-sm-down">
-<?php
-    $year=$_POST['y']=date('Y');
-    $month=$_POST['m']=date('m');
-    $days=date('t',strtotime("{$year}-{$month}-1"));
-    $week=date('w',strtotime("{$year}-{$month}-1"));
-?>
-<center><h3 class='doc-title mdui-text-color-theme'><?php echo "公元 {$year} 年 {$month} 月"; ?></h3></center>
-<?php
-echo "<table class='mdui-table mdui-shadow-0' style='border-radius: 3px;'>";
-    echo "<thead>";
-      echo "<tr>";
-        echo "<th class='mdui-table-col-numeric'>周日(Sun.)</th>";
-        echo "<th class='mdui-table-col-numeric'>周一(Mon.)</th>";
-        echo "<th class='mdui-table-col-numeric'>周二(Tue.)</th>";
-        echo "<th class='mdui-table-col-numeric'>周三(Wed.)</th>";
-        echo "<th class='mdui-table-col-numeric'>周四(Thu.)</th>";
-        echo "<th class='mdui-table-col-numeric'>周五(Fri.)</th>";
-        echo "<th class='mdui-table-col-numeric'>周六(Sat.)</th>";
-      echo "</tr>";
-    echo "</thead>";
-      
-        for($i=1-$week;$i<=$days;){
-            echo "<tr>";
-            for($j=0;$j<7;$j++){
-                if($i>$days || $i<=0){
-                    echo "<td>&nbsp;</td>";
-                }else{
-                echo "<td>{$i}</td>";
-                }
-                $i++;
-            }
-            echo "</tr>";
-        }
-        echo "</table>";
-?>
+
+
+<div class="mdui-container">
+  <div class="mdui-row mdui-row-gapless">
+  	
+    <div class="mdui-col-xs-8">
+
+<div class="mdui-container">
+    <div class="mdui-card mdui-shadow-8" style="border-radius: 20px;">
+        <div class="mdui-card-primary">
+          <div class="mdui-card-primary-title">ToDo</div>
+        </div>
+          <div class="mdui-divider"></div>
+        <div class="mdui-card-content">
+          	
+		<div class="mdui-row">
+		  <div class="mdui-col-sm-10">
+			<div class="mdui-textfield">
+			  <input class="mdui-textfield-input" id="id-input-todo" type="text" placeholder=""/>
+			  <div class="mdui-textfield-error">ToDo不能为空</div>
+			</div>
+		  </div>
+		  <div class="mdui-col-sm-2">
+		  	<button class="mdui-btn  mdui-color-theme-accent mdui-ripple" id="id-button-add" type="button" style="border-radius: 20px; margin-top: 15px; background-color: #849ae1!important;"><i class="mdui-icon material-icons">add</i></button>
+		  </div>
+		</div>
+		<div class="mdui-card-content">
+		        <div id="id-div-container"></div>
+		</div>
+        </div>
+
+    </div>
 </div>
+    	
+    </div>
+    
+    <div class="mdui-col-xs-4">
+    	
+    	
+    </div>
+    
+  </div>
 </div>
+
+
+
+
+<BR/>
+<BR/>
+
+
+
+           <div class="mdui-col-xs-12 mdui-col-sm-12">
+                <div class="mdui-card mdui-shadow-15" style="border-radius: 20px;">
+                    <div class="mdui-card-actions">
+                        <button name="submit" class="mdui-btn mdui-btn-icon mdui-color-grey-100 mdui-ripple"><i class="mdui-icon material-icons">mic_none</i></button>
+                        <button name="submit" class="mdui-btn mdui-btn-icon mdui-color-grey-100 mdui-ripple"><i class="mdui-icon material-icons">pets</i></button>
+                        <button name="submit" class="mdui-btn mdui-btn-icon mdui-color-grey-200 mdui-ripple mdui-float-right"><i class="mdui-icon material-icons">blur_on</i></button>
+                    </div>
+                </div>
+            </div>  
+
+
+
+
+</div>
+
+<br/>
 </div>
 </div>
 <br/>
+
+
+<style>
+    .done {
+        color: red;
+        text-decoration: line-through;
+    }
+</style>
+
+<script>
+    var log = function() {
+        console.log.apply(console, arguments);
+    }
+
+    var $ = function(ele) {
+        return document.querySelector(ele);
+    }
+
+    var todoList = [];
+
+    var addButton = $('#id-button-add');
+    addButton.addEventListener('click', function() {
+        var todoInput = $('#id-input-todo');
+        var task = todoInput.value;
+        var todo = {
+            'task': task,
+            'time': currentTime()
+        }
+        todoList.push(todo);
+        saveTodos();
+        insertTodo(todo);
+    });
+
+    var insertTodo = function(todo) {
+        var todoContainer = $('#id-div-container');
+        var t = templateTodo(todo);
+        todoContainer.insertAdjacentHTML('beforeend', t);
+    };
+
+    var templateTodo = function(todo) {
+        var t = `
+            <div class='todo-cell'>
+            <button class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons todo-done">&#xe90f;</i></button>
+    		<button class="mdui-btn mdui-btn-icon mdui-icon material-icons todo-delete">&#xe14c;</button>
+    		<span contenteditable='true'>${todo.task}</span>
+            </div>
+        `
+        return t;
+    };
+
+    var todoContainer = $('#id-div-container');
+    todoContainer.addEventListener('keydown', function(event) {
+        var target = event.target;
+        if(event.key === 'Enter') {
+            target.blur();
+            event.preventDefault();
+            var index = indexOfElement(target);
+            todoList[index].task = target.innerHTML;
+            saveTodos();
+        }
+    });
+
+
+    todoContainer.addEventListener('click', function(event){
+        log('container click', event, event.target);
+        var target = event.target;
+        if(target.classList.contains('todo-done')) {
+            log('done');
+            // 给 todo div 开关一个状态 class
+            var todoDiv = target.parentElement;
+            toggleClass(todoDiv, 'done');
+        } else if (target.classList.contains('todo-delete')) {
+            log('delete');
+            var todoDiv = target.parentElement;
+            var index = indexOfElement(target);
+            log('delete index',  index);
+            todoDiv.remove();
+            // 把元素从 todoList 中 remove 掉
+            // delete todoList[index]
+            todoList.splice(index, 1);
+            saveTodos();
+        }
+    });
+
+    var saveTodos = function() {
+        var s = JSON.stringify(todoList);
+        localStorage.todoList = s;
+    };
+
+    var loadTodos = function() {
+        var s = localStorage.todoList;
+        return JSON.parse(s);
+    };
+
+
+    var indexOfElement = function(element) {
+        var parent = element.parentElement;
+        for(var i = 0; i < parent.children.length; ++i) {
+            var e = parent.children[i];
+            if (e === element) {
+                return i;
+            }
+        }
+    };
+
+    var toggleClass = function(element, className) {
+        if (element.classList.contains(className)) {
+            element.classList.remove(className);
+        } else {
+            element.classList.add(className);
+        }
+    };
+
+
+
+    var currentTime = function() {
+        var d = new Date();
+        var month = d.getMonth() + 1;
+        var date = d.getDate();
+        var hours = d.getHours();
+        var minutes = d.getMinutes();
+        var seconds = d.getSeconds();
+        var timeString = `${month}/${date} ${hours}:${minutes}:${seconds}`;
+        return timeString;
+    };  
+
+
+    todoList = loadTodos();
+    for(var i = 0; i < todoList.length; ++i) {
+        var todo = todoList[i];
+        insertTodo(todo);
+    }
+
+</script>
+
+
+<script>
+      function randomCharacter(element,characters=["UNDEFINED"]){
+        var settings = {
+          el:element,
+          chars:characters,
+          delay:{
+            cycle:4000,
+            char:45
+          },
+          intervals:{
+            cycle:null,
+            char:null
+          },
+          progress:{
+            cycle:null,
+            char:null
+          }
+        };
+        function updateEntire(){
+          //if(!settings.intervals.char){
+            settings.progress.cycle = Math.random()*settings.chars.length|0;
+            settings.progress.char = 0;
+            //settings.intervals.char = setInterval(updateOneCharacter,settings.delay.char);
+          //}
+        }
+        function updateOneCharacter(){
+       // if(settings.progress.char++<settings.chars[settings.progress.cycle].length)
+          document.querySelector(settings.el).innerText = 
+            settings.chars[settings.progress.cycle].substr(0,settings.progress.char)+
+            Math.random().toString(16).substr(2,settings.chars[settings.progress.cycle].length-settings.progress.char);
+         // else
+         //   settings.intervals.char = clearInterval(settings.intervals.char);
+        }
+        function cycleController(){
+          //Finally I decided to use a controller to control the cycles looping.
+          if(!settings.intervals.char) {
+            updateEntire();
+            settings.intervals.char = setInterval(function(){
+              if(settings.progress.char++<settings.chars[settings.progress.cycle].length)
+                updateOneCharacter();
+              else
+                settings.intervals.char = clearInterval(settings.intervals.char);
+            },settings.delay.char);
+          }
+        }
+        settings.__proto__.restart = function(cycle=4000,char=45){
+          clearInterval(settings.intervals.cycle);
+          clearInterval(settings.intervals.char);
+          settings.intervals.char = null;//Prevent exceptions.
+          settings.delay = {cycle:cycle,char:char};
+          settings.intervals.cycle = setInterval(cycleController,cycle);
+          cycleController();//I don't want to wait for a few seconds first.
+        }
+        Object.freeze(settings.__proto__);//Prevent unexpected changes.
+        settings.restart();//Start the refresher.
+        return settings;
+      }
+      var example = new randomCharacter("#rand-character",[
+        //古学词库
+        "慎终追远，民德归厚矣。",
+        "学而时习之，不亦说乎？",
+        "巧言令色，鲜矣仁！",
+        "慎终追远，民德归厚矣。",
+        "贫而无怨难，富而无骄易。",
+        "其言之不怍，则为之也难。",
+        "勿欺也，而犯之。",
+        "古之学者为己，今之学者为人。",
+        "北冥有鱼，其名为鲲。鲲之大，不知其几千里也。",
+        "吾有大树，人谓之樗。",
+        "窈窕淑女、君子好逑。",
+        "蒹葭苍苍、白露为霜。",
+        "蒹葭凄凄、白露未晞",
+        "蒹葭采采、白露未已。",
+        "学而时习之不亦说乎",
+        "学如不及犹恐失之",
+        "吾尝终日不食终夜不寝以思无益不如学也",
+        "未闻花名，但识花香，再见花时，泪已千行", //逼真古学😂
+        "人类的本质是复读机",
+        "仕而优则学学而优则仕",
+        "学不厌智也教不倦仁也",
+        "君有忧色，何也？",
+        "爱亲者，不敢恶于人",
+        "敬亲者，不敢慢于人",
+        "爱敬尽于事亲，而德教加于百姓，刑于四海",
+        "夙兴夜寐，无忝尔所生"
+      ]);
+   </script>

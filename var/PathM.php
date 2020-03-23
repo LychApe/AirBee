@@ -31,6 +31,8 @@
               define('Usr_Tsc_PATH', Usr_T_PATH . '/Static/CSS');
               define('Usr_Tsj_PATH', Usr_T_PATH . '/Static/JS');
             define('Usr_P_PATH', Usr_PATH . '/plugins');
+        
+        include(AirBee_PATH."/config.php");
     }
 }
 ?>

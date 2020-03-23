@@ -23,7 +23,7 @@
         </div>
       </div>
         
-            <a href="index.php">
+            <a href="<?php echo $GLOBALS['url'] ?>/index.php">
               <li class="mdui-list-item mdui-ripple">
                 <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-light-blue">&#xe88a;</i>
                 <div class="mdui-list-item-content">首  页</div>
@@ -37,14 +37,14 @@
               </div>
               
               <div class="mdui-collapse-item-body mdui-list">
-                <a href="login.php">
+                <a href="<?php echo $GLOBALS['url'] ?>/login.php">
                     <li class="mdui-list-item mdui-ripple">
                         <i class="mdui-list-item-icon mdui-icon material-icons">https</i>
                         <div class="mdui-list-item-content">登陆</div>
                   </li>
                 </a>
                 
-                <a href="register.php">
+                <a href="<?php echo $GLOBALS['url'] ?>/register.php">
                     <li class="mdui-list-item mdui-ripple">
                         <i class="mdui-list-item-icon mdui-icon material-icons">group_add</i>
                         <div class="mdui-list-item-content">注册</div>
@@ -53,6 +53,22 @@
               </div>
             </div>
             
+            <div class="mdui-collapse-item mdui-collapse-item-dense">
+              <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-deep-purple">apps</i>
+                <div class="mdui-list-item-content">应 用</div>
+                <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+              </div>
+              
+              <div class="mdui-collapse-item-body mdui-list">
+                <a href="<?php echo $GLOBALS['url'] ?>/app/scoreger.php">
+                    <li class="mdui-list-item mdui-ripple">
+                        <div class="mdui-list-item-content">scoreger</div>
+                  </li>
+                </a>
+              </div>
+            </div> 
+       
           <div class="mdui-divider"></div>
           
             <a>
