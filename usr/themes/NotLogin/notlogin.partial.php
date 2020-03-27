@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="<?php echo((Usr_Tsc_PATH."/NotLogin.css")); ?>">
 
 <div class="mdui-container-fluid">
-    <div class="mdui-row Back-E1">
+    <div class="mdui-row Back-E1" style="position: relative">
     
           <div class="mdui-col-xs-12 mdui-valign">
             <div class="mdui-chip">
@@ -14,49 +14,51 @@
 	<img class="mdui-img-circle mdui-center" src="https://s6.cccc.ac.cn/2020/02/27/b6b36f97f9ab3.png" style="width: 140px;
 	    height: 140px;"/>
       </div>
-    </div>
-    
-    <div class="mdui-row">
-      <div class="mdui-col-xs-6 comment-section">
-      </div>
-      <div class="mdui-col-xs-6 mdui-float-right SetButton">
-        <button class="mdui-fab mdui-hidden-sm-down mdui-color-theme-accent mdui-ripple"><i class="mdui-icon material-icons"></i></button>
-      </div>
+      
+<div class="mdui-container-fluid">      
+<div class="waveWrapper waveAnimation">
+  <div class="waveWrapperInner bgTop">
+    <div class="wave waveTop" style="background-image: url('https://s6.cccc.ac.cn/2020/03/26/b6c17bc3bfa19.png')"></div>
+  </div>
+  <div class="waveWrapperInner bgMiddle">
+    <div class="wave waveMiddle" style="background-image: url('https://s6.cccc.ac.cn/2020/03/26/954a644eb1a23.png')"></div>
+  </div>
+  <div class="waveWrapperInner bgBottom">
+    <div class="wave waveBottom" style="background-image: url('https://s6.cccc.ac.cn/2020/03/26/9d890dbdc088f.png')"></div>
+  </div>
+</div>         
+</div> 
+
     </div>
     
     <div class="mdui-container">
-
-      <div class="mdui-card mdui-shadow-0" style="margin-top: 16px; border-radius: 18px; background-color: #EEEEEE;">
-        <div class="mdui-card-primary">
-          <div class="mdui-card-primary-title mdui-text-center">小窗台</div>
-        </div>
-        <div class="detail-info" style="background-color: #F5F5F5;">
+    	
         <div class="mdui-card-content">
-		<div class="mdui-row-xs-3 mdui-hidden-xs-down">
+		<div class="mdui-row-xs-3 mdui-hidden-xs-down" style="transform: translateY(50%);z-index: 3;position: inherit;">
         	  	
 			    <div class="mdui-col">
-			        <div class="mdui-card mdui-shadow-3 mdui-hoverable" style="border-radius: 15px; background-color: #FAFAFA;">
+			        <div class="mdui-card mdui-shadow-3 mdui-hoverable" style="border-radius: 15px; background-image: linear-gradient(60deg, #29323c 0%, #485563 100%); ">
 			        <div class="mdui-card-primary">
-			          <div class="mdui-card-primary-title">名片</div>
-			          <div class="mdui-card-primary-subtitle">Card</div>
+			          <div class="mdui-card-primary-title" style="color: #f0f0f0;">名片</div>
+			          <div class="mdui-card-primary-subtitle" style="color: #f0f0f0;">Card</div>
 			        </div>
 			        </div>
 			    </div>
 			    
 			    <div class="mdui-col">
-			        <div class="mdui-card mdui-shadow-3 mdui-hoverable" style="border-radius: 15px; background-color: #FAFAFA;">
+			        <div class="mdui-card mdui-shadow-3 mdui-hoverable" style="border-radius: 15px; background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);">
 			        <div class="mdui-card-primary">
-			          <div class="mdui-card-primary-title">博客</div>
-			          <div class="mdui-card-primary-subtitle">Blog</div>
+			          <div class="mdui-card-primary-title" style="color: #f0f0f0;">博客</div>
+			          <div class="mdui-card-primary-subtitle" style="color: #f0f0f0;">Blog</div>
 			        </div>
 			        </div>
 			    </div>
 			    
 			    <div class="mdui-col">
-			        <div class="mdui-card mdui-shadow-3 mdui-hoverable" style="border-radius: 15px; background-color: #FAFAFA;">
+			        <div class="mdui-card mdui-shadow-3 mdui-hoverable" style="border-radius: 15px; background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);">
 			        <div class="mdui-card-primary">
-			          <div class="mdui-card-primary-title">留言</div>
-			          <div class="mdui-card-primary-subtitle">comment</div>
+			          <div class="mdui-card-primary-title" style="color: #f0f0f0;">留言</div>
+			          <div class="mdui-card-primary-subtitle" style="color: #f0f0f0;">comment</div>
 			        </div>
 			        </div>
 				</div>
@@ -110,7 +112,21 @@
 			  </div>
         </div>
         </div>
+
+
+    <div class="mdui-container">
+      <div class="mdui-card mdui-shadow-4" style="border-radius: 15px;">
+        <div class="mdui-card-content">
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        </div>
       </div>
+    </div>
+
 
 <br/>
 <br/>
@@ -123,30 +139,7 @@
     <div class="mdui-col-xs-8">
 
 <div class="mdui-container">
-    <div class="mdui-card mdui-shadow-8" style="border-radius: 20px;">
-        <div class="mdui-card-primary">
-          <div class="mdui-card-primary-title">ToDo</div>
-        </div>
-          <div class="mdui-divider"></div>
-        <div class="mdui-card-content">
-          	
-		<div class="mdui-row">
-		  <div class="mdui-col-sm-10">
-			<div class="mdui-textfield">
-			  <input class="mdui-textfield-input" id="id-input-todo" type="text" placeholder=""/>
-			  <div class="mdui-textfield-error">ToDo不能为空</div>
-			</div>
-		  </div>
-		  <div class="mdui-col-sm-2">
-		  	<button class="mdui-btn  mdui-color-theme-accent mdui-ripple" id="id-button-add" type="button" style="border-radius: 20px; margin-top: 15px; background-color: #849ae1!important;"><i class="mdui-icon material-icons">add</i></button>
-		  </div>
-		</div>
-		<div class="mdui-card-content">
-		        <div id="id-div-container"></div>
-		</div>
-        </div>
 
-    </div>
 </div>
     	
     </div>

@@ -5,9 +5,10 @@
 	    <meta name='keywords' content=' '/>
 	    <meta name='description' content=' '/>
 	    <title>AirBee</title>
-	    <link rel="stylesheet" href="//cdnjs.loli.net/ajax/libs/mdui/0.4.3/css/mdui.min.css">
-	    <script src="https://cdnjs.loli.net/ajax/libs/mdui/0.4.3/js/mdui.min.js"></script>
-	    <script>
+	    <link rel="stylesheet" href="//cdn.bootcss.com/mdui/0.4.3/css/mdui.min.css">
+	    <link rel="stylesheet" href="<?php echo((Usr_Tsc_PATH."/style.css")); ?>">
+	    <script src="//cdn.bootcss.com/mdui/0.4.3/js/mdui.min.js"></script>
+	    <!--<script>
 	window.onkeydown = window.onkeyup = window.onkeypress = function (event) {  
     // 判断是否按下F12，F12键码为123  
     if (event.keyCode = 123) {  
@@ -41,7 +42,7 @@
             window.location = "about:blank";
         }
     }
-</script>
+</script>!-->
 
 	</head>
 	

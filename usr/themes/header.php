@@ -6,7 +6,7 @@
         <a class="mdui-btn mdui-btn-icon" onclick="window.history.go(0)"><i class="mdui-icon material-icons">&#xe863;</i></a>
     </div>
 </header>
-<script>
+<!--<script>
 	window.onkeydown = window.onkeyup = window.onkeypress = function (event) {  
     // 判断是否按下F12，F12键码为123  
     if (event.keyCode = 123) {  
@@ -77,5 +77,6 @@
             $div.remove();//销毁创建的临时DOM
         }
     });
-</script>
+</script>!-->
+
 

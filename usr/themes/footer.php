@@ -25,4 +25,4 @@
 </footer>
 
 
-<script src="//cdnjs.loli.net/ajax/libs/mdui/0.4.3/js/mdui.min.js"></script>
+<script src="//cdn.bootcss.com/mdui/0.4.3/js/mdui.min.js"></script>
