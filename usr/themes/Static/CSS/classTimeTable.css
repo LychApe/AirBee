@@ -1,0 +1,171 @@
+/**
+ * 由 HTML5 + CSS3 编写的轻量级课程表，支持自定义扩展。还可用 JavaScript 渲染
+ *
+ * Author：  chuwen（初文）
+ * Website： https://NowTime.cc
+ * GitHub：https://github.com/PrintNow/ClassTimeTable
+ * LICENSE： MIT https://github.com/PrintNow/ClassTimeTable/blob/master/LICENSE
+ *
+ * 自定义课程显示颜色，请看 135行
+ */
+
+
+/*课程表表头*/
+.ct-header{
+    display: flex;
+}
+
+/*课程表表头 > 子盒子*/
+.ct-header .ct-th{
+    width: 100px;
+    min-height: 42px;
+    text-align: center;
+    border-right: 2px solid #fff;
+    background-color: #f2f6f7;
+    padding: 4px 0;
+    border-radius: 4px;
+}
+.ct-header .ct-th:first-child{
+    width: 40px;
+}
+.ct-header .ct-th:last-child{
+    border-left: none;
+}
+/*设置激活后的样式*/
+.ct-header .ct-th.active{
+    height: auto;
+    /*box-sizing: border-box;!*设置边框为 内边框*!*/
+    border-bottom: 3px solid #23b7e5;
+    color: #23b7e5;
+}
+
+/*子盒子 span 设置块*/
+.ct-header .ct-th span{
+    display: block;
+}
+/*设置周几*/
+.ct-header .ct-th .title{
+    font-weight: 600;
+    letter-spacing: 3px;/*设置字符间距*/
+    padding-left: 3px;
+}
+/*设置月日*/
+.ct-header .ct-th .day{
+    font-size: 13px;
+}
+
+
+.ct-body{
+    display: flex;
+}
+/*设置每列垂直排列*/
+.ct-body .ct-cr{
+    display: flex;
+    flex-direction: column;
+    width: 102px;
+}
+.ct-body .ct-cr:first-child{
+    width: 40px;
+    background-color: #f2f6f7;
+    border-right: 2px solid #fff;
+}
+
+/*设置表格 小格子*/
+.ct-body .ct-cr .ct-td{
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+
+    padding: 4px;
+    min-height: 78px;
+
+    /*使小格子内 元素 居中*/
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+
+    cursor: pointer;
+    width: auto;
+    border-radius: 8px;
+}
+.ct-body .ct-cr .ct-td.kongbai{
+    cursor: unset;
+}
+
+/*.ct-body .ct-cr .ct-td.kongbai{*/
+/*    border-radius: unset;*/
+/*}*/
+/*跨1行的*/
+.ct-body .ct-cr .ct-td.col-1{
+    height: 88px;
+}
+/*跨2行的*/
+.ct-body .ct-cr .ct-td.col-2{
+    height: 177px;
+}
+/*跨3行的*/
+.ct-body .ct-cr .ct-td.col-3{
+    height: 254px;
+}
+/*跨4行的*/
+.ct-body .ct-cr .ct-td.col-4{
+    height: 354px;
+}
+
+/*“课程名字”*/
+.ct-body .ct-cr .ct-td .name{
+    font-size: 14px;
+    font-weight: 600;
+}
+/*上课地点*/
+.ct-body .ct-cr .ct-td .address{
+    /*font-weight: 300;*/
+    font-size: 12px;
+}
+.ct-body .ct-cr .ct-td .teacher{
+    font-size: 13px;
+}
+
+
+
+
+
+
+/*
+课程颜色表
+可以自定义，只需要按照格式添加、修改样式即可
+添加了新的样式后，在 classTimeTable.js 42行 按照格式添加类名即可
+*/
+div[class*="bg-color-"]{
+    color: #fff;
+}
+.bg-color-1{
+    background-color: rgb(240, 82, 97);
+}
+.bg-color-2{
+    background-color: rgb(72, 168, 228);
+}
+.bg-color-3{
+    background-color: rgb(82, 219, 154);
+}
+.bg-color-4{
+    background-color: rgb(255, 208, 97);
+}
+.bg-color-6{
+    background-color: rgb(0, 150, 136);
+}
+.bg-color-5{
+    background-color: rgb(63, 81, 181);
+}
+.bg-color-7{
+    background-color: rgb(121, 86, 73);
+}
+.bg-color-8{
+    background-color: rgb(96, 125, 139);
+}
+.bg-color-9{
+    background-color: rgb(103, 58, 183);
+}
+.bg-color-10{
+    background-color: rgb(180, 149, 225);
+}

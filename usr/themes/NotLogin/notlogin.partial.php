@@ -4,8 +4,8 @@
     <div class="mdui-row Back-E1" style="position: relative">
     
           <div class="mdui-col-xs-12 mdui-valign">
-            <div class="mdui-chip">
-              <span class="mdui-chip-icon">Bio</span>
+            <div class="mdui-chip" style="background: linear-gradient(-20deg, #ddd6f3 0%, #faaca8 100%, #faaca8 100%);">
+              <!--<span class="mdui-chip-icon">Bio</span>!-->
               <span class="mdui-chip-title"><span class="mdui-chip-title">鲁迅说：“<span id="rand-character"></span>”</span>
             </div>
          </div>
@@ -119,9 +119,32 @@
         <div class="mdui-card-content">
         <br/>
         <br/>
-        <br/>
-        <br/>
-        <br/>
+
+		<div class="mdui-row">
+		  <div class="mdui-col-xs-12 mdui-col-sm-8">
+		  	<link rel="stylesheet" href="<?php echo((Usr_Tsc_PATH."/classTimeTable.css")); ?>">
+		  	<div class="">
+
+			    <div id="class-table" class="class-table">
+				<!--表头-->
+			        <div class="ct-header">
+			        </div>
+			
+				<!--表格主体-->
+			        <div class="ct-body">
+			        </div>
+			    </div>
+
+		  	</div>
+		  	<script src="<?php echo((Usr_Tsj_PATH."/classTimeTable.js")); ?>"></script>
+		  </div>
+		  <div class="mdui-col-xs-6 mdui-col-sm-4">
+		  	<div class="mdui-card">
+		  		
+		  	</div>
+		  </div>
+		</div>
+	
         <br/>
         </div>
       </div>
@@ -130,30 +153,6 @@
 
 <br/>
 <br/>
-
-
-
-<div class="mdui-container">
-  <div class="mdui-row mdui-row-gapless">
-  	
-    <div class="mdui-col-xs-8">
-
-<div class="mdui-container">
-
-</div>
-    	
-    </div>
-    
-    <div class="mdui-col-xs-4">
-    	
-    	
-    </div>
-    
-  </div>
-</div>
-
-
-
 
 <BR/>
 <BR/>
@@ -382,23 +381,19 @@
         "其言之不怍，则为之也难。",
         "勿欺也，而犯之。",
         "古之学者为己，今之学者为人。",
-        "北冥有鱼，其名为鲲。鲲之大，不知其几千里也。",
         "吾有大树，人谓之樗。",
         "窈窕淑女、君子好逑。",
         "蒹葭苍苍、白露为霜。",
         "蒹葭凄凄、白露未晞",
         "蒹葭采采、白露未已。",
         "学而时习之不亦说乎",
-        "学如不及犹恐失之",
-        "吾尝终日不食终夜不寝以思无益不如学也",
-        "未闻花名，但识花香，再见花时，泪已千行", //逼真古学😂
+        "学如不及犹恐失之",//逼真古学😂
         "人类的本质是复读机",
         "仕而优则学学而优则仕",
         "学不厌智也教不倦仁也",
         "君有忧色，何也？",
         "爱亲者，不敢恶于人",
-        "敬亲者，不敢慢于人",
-        "爱敬尽于事亲，而德教加于百姓，刑于四海",
+        "敬亲者，不敢慢于人",,
         "夙兴夜寐，无忝尔所生"
       ]);
    </script>

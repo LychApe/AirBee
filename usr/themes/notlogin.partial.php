@@ -326,7 +326,16 @@ Powered by AirBee 0.1
         "夙兴夜寐，无忝尔所生"
       ]);
    </script>
-
+	<script>
+		//如果是6月12日，自动播放生日歌。
+      var Dt = new Date();
+      if ((Dt.getMonth() == 5) && (Dt.getDate() == 12))
+        $("#hidden").append('<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=5279993&auto=1&height=66"></iframe>');
+      if ((Dt.getMonth() == 5 && Dt.getDate() - 12 == 0)) {
+        console.log("%c生%c日%c快%c乐%c，叉%c鸡！", "font-size:56px;font-weight:400;color:#2196f3;", "font-size:56px;font-weight:400;color:#f44336;", "font-size:56px;font-weight:400;color:#ffeb3b;", "font-size:56px;font-weight:400;color:#2196f3;", "font-size:56px;font-weight:400;color:#4caf50;", "font-size:56px;font-weight:400;color:#f44336;");//控制台庆祝生日。
+      } else $("#happy-birthday").addClass("mdui-hidden");//如果离生日较远，隐藏庆祝横幅。
+    })();
+	</script>
   <script src="//cdnjs.loli.net/ajax/libs/mdui/0.4.3/js/mdui.min.js"></script>
   
 </body>
