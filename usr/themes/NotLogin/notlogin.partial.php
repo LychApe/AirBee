@@ -121,38 +121,44 @@
         <br/>
 
 		<div class="mdui-row">
+			
+		<!--课程表-->
 		  <div class="mdui-col-xs-12 mdui-col-sm-8">
 		  	<link rel="stylesheet" href="<?php echo((Usr_Tsc_PATH."/classTimeTable.css")); ?>">
-		  	<div class="">
-
 			    <div id="class-table" class="class-table">
-				<!--表头-->
-			        <div class="ct-header">
-			        </div>
-			
-				<!--表格主体-->
-			        <div class="ct-body">
-			        </div>
+					<!--表头-->
+			        <div class="ct-header"></div>
+					<!--表格主体-->
+			        <div class="ct-body"></div>
 			    </div>
-
-		  	</div>
 		  	<script src="<?php echo((Usr_Tsj_PATH."/classTimeTable.js")); ?>"></script>
 		  </div>
+		  
+		<!--模块卡片-->
 		  <div class="mdui-col-xs-6 mdui-col-sm-4">
+		  	<!--#1-->
+		  	<div class="mdui-card mdui-shadow-0" style=" border-radius: 13px; background-image: linear-gradient(to right, #434343 0%, black 100%);">
+		        <div class="mdui-card-primary">
+		          <div class="mdui-card-primary-title" style="color: #d6d7d9;">小黑板</div>
+		        </div>
+		        <div class="mdui-divider"></div>
+		        <div class="mdui-card-content" style="color: #d6d7d9;">
+		        	子曰：「学而时习之，不亦说乎？有朋自远方来，不亦乐乎？人不知，而不愠，不亦君子乎
+		        </div>
+		  	</div>
+		  	<br/>
+		  	<!--#2-->
 		  	<div class="mdui-card">
 		  		
 		  	</div>
+		  	<br/>
 		  </div>
+		  
 		</div>
-	
-        <br/>
+		
         </div>
       </div>
     </div>
-
-
-<br/>
-<br/>
 
 <BR/>
 <BR/>
