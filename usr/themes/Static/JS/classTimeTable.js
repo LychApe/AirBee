@@ -7,7 +7,6 @@
  * LICENSE： MIT https://github.com/PrintNow/ClassTimeTable/blob/master/LICENSE
 */
 
-
     function ClassTimeTable(){
     this.Week2Cn = {
         1: "周一",
@@ -226,21 +225,21 @@ ClassTimeTable.prototype = {
 var classs = new ClassTimeTable();
 classs.setConfig({
     max_day: 7,//最大天数
-    session: 7,//多少节课
+    session: 8,//多少节课
     selector: "#class-table",
     data: {
          1: {
             //表示从第 1 节课开始
             1: {
-                name: "物理",
+                name: "生物",
                 length: 1,//节次有多长
             },
             2: {
-                name: "化学",
+                name: "历史",
 				length: 1,
             },
             3: {
-                name: "午休",
+                name: "自由",
 				length: 1
             },
             4: {
@@ -248,22 +247,96 @@ classs.setConfig({
 				length: 1
             },
             5: {
-                name: "自由",
-				length: 3
+                name: "生物",
+				length: 1
+            },
+            6: {
+                name: "历史",
+				length: 1
+            },
+            7: {
+                name: "班会",
+				length: 1
+            },
+            8: {
+                name: "语文",
+				length: 1
             },
         },
-        2: {
+         2: {
             //表示从第 1 节课开始
             1: {
                 name: "物理",
                 length: 1,//节次有多长
             },
             2: {
-                name: "化学",
+                name: "政治",
 				length: 1,
             },
             3: {
-                name: "午休",
+                name: "自由",
+				length: 1
+            },
+            4: {
+                name: "英语",
+				length: 1
+            },
+            5: {
+                name: "物理",
+				length: 1
+            },
+            6: {
+                name: "政治",
+				length: 1
+            },
+            7: {
+                name: "英语",
+				length: 2
+            },
+        },
+         3: {
+            //表示从第 1 节课开始
+            1: {
+                name: "化学",
+                length: 1,//节次有多长
+            },
+            2: {
+                name: "地理",
+				length: 1,
+            },
+            3: {
+                name: "自由",
+				length: 1
+            },
+            4: {
+                name: "数学",
+				length: 1
+            },
+            5: {
+                name: "化学",
+				length: 1
+            },
+            6: {
+                name: "地理",
+				length: 1
+            },
+            7: {
+                name: "数学",
+				length: 2
+            },
+        },
+         4: {
+            //表示从第 1 节课开始
+            1: {
+                name: "生物",
+                length: 1,//节次有多长
+            },
+            2: {
+                name: "历史",
+				length: 1,
+            },
+            3: {
+                name: "自由",
 				length: 1
             },
             4: {
@@ -271,77 +344,47 @@ classs.setConfig({
 				length: 1
             },
             5: {
-                name: "自由",
-				length: 3
+                name: "生物",
+				length: 1
+            },
+            6: {
+                name: "历史",
+				length: 1
+            },
+            7: {
+                name: "历史",
+				length: 2
             },
         },
-        3: {
+         5: {
             //表示从第 1 节课开始
             1: {
                 name: "物理",
                 length: 1,//节次有多长
             },
             2: {
-                name: "化学",
+                name: "政治",
 				length: 1,
             },
             3: {
-                name: "午休",
+                name: "自由",
 				length: 1
             },
             4: {
-                name: "语文",
+                name: "英语",
 				length: 1
             },
             5: {
-                name: "自由",
-				length: 3
-            },
-        },
-        4: {
-            //表示从第 1 节课开始
-            1: {
                 name: "物理",
-                length: 1,//节次有多长
-            },
-            2: {
-                name: "化学",
-				length: 1,
-            },
-            3: {
-                name: "午休",
 				length: 1
             },
-            4: {
-                name: "语文",
+            6: {
+                name: "政治",
 				length: 1
             },
-            5: {
-                name: "自由",
-				length: 3
-            },
-        },
-        5: {
-            //表示从第 1 节课开始
-            1: {
-                name: "物理",
-                length: 1,//节次有多长
-            },
-            2: {
-                name: "化学",
-				length: 1,
-            },
-            3: {
-                name: "午休",
-				length: 1
-            },
-            4: {
-                name: "语文",
-				length: 1
-            },
-            5: {
-                name: "自由",
-				length: 3
+            7: {
+                name: "英语",
+				length: 2
             },
         },
         6: {
@@ -355,7 +398,7 @@ classs.setConfig({
 				length: 1,
             },
             3: {
-                name: "午休",
+                name: "自由",
 				length: 1
             },
             4: {
@@ -364,7 +407,7 @@ classs.setConfig({
             },
             5: {
                 name: "自由",
-				length: 3
+				length: 4
             },
         },
         7: {
@@ -379,21 +422,21 @@ classs.setConfig({
             },
             3: {
                 name: "自由",
-				length: 1
+				length: 2
             },
-            4: {
+            5: {
                 name: "生物",
 				length: 1
             },
-            5: {
+            6: {
                 name: "政冶",
 				length: 1
             },
-            6: {
+            7: {
                 name: "历史",
 				length: 1
             },
-            7: {
+            8: {
                 name: "地理",
 				length: 1
             },

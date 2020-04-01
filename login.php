@@ -41,9 +41,9 @@ function login(){
     }
 }
 
-    	$_SESSION['username'] = $username;
-		header('Location: ./Home/index.php'); /*跳转登录后主页*/
-		exit();
+    $_SESSION['username'] = $username;
+	header('Location: ./Home/index.php'); /*跳转登录后主页*/
+	exit();
 
 var_dump($_POST['username'],$_POST['submit']);
 #页面参数赋值
