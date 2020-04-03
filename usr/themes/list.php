@@ -37,14 +37,14 @@
               </div>
               
               <div class="mdui-collapse-item-body mdui-list">
-                <a href="<?php echo $GLOBALS['url'] ?>/login.php">
+                <a href="<?php echo $GLOBALS['url'] ?>/?User=Login">
                     <li class="mdui-list-item mdui-ripple">
                         <i class="mdui-list-item-icon mdui-icon material-icons">https</i>
                         <div class="mdui-list-item-content">登陆</div>
                   </li>
                 </a>
                 
-                <a href="<?php echo $GLOBALS['url'] ?>/register.php">
+                <a href="<?php echo $GLOBALS['url'] ?>/?User=Register">
                     <li class="mdui-list-item mdui-ripple">
                         <i class="mdui-list-item-icon mdui-icon material-icons">group_add</i>
                         <div class="mdui-list-item-content">注册</div>
@@ -61,7 +61,7 @@
               </div>
               
               <div class="mdui-collapse-item-body mdui-list">
-                <a href="<?php echo $GLOBALS['url'] ?>/app/scoreger.php">
+                <a href="<?php echo $GLOBALS['url'] ?>/?App=scoreger">
                     <li class="mdui-list-item mdui-ripple">
                         <div class="mdui-list-item-content">scoreger</div>
                   </li>
@@ -71,13 +71,13 @@
        
           <div class="mdui-divider"></div>
           
-            <a>
+            <a href="<?php echo $GLOBALS['url'] ?>/?App=comment">
             <li class="mdui-list-item mdui-ripple">
                 <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-indigo">&#xe0b7;</i>
                 <span class="mdui-list-item-content mdui-text-color-theme-text">留言点滴</span>
                 <span class="mdui-list-item-avatar" style="background: -webkit-linear-gradient(to right, #654ea3, #eaafc8);">
                     <?php 
-                    echo("6");
+                    echo("0");
                     //echo mysqli_num_rows( $ALLNUM );
                     ?>
                 </span>
@@ -86,7 +86,7 @@
             
             
             <a>
-    		  <li class="mdui-list-item mdui-ripple" mdui-dialog="{target:'#about_FnMB'}">
+    		  <li class="mdui-list-item mdui-ripple" mdui-dialog="{target:'#ABOUT_AirBee'}">
 				<i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-brown">info_outline</i>
 				<div class="mdui-list-item-content">ABOUT</div>
 			  </li>

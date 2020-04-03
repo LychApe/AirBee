@@ -1,28 +1,28 @@
 <link rel="stylesheet" href="<?php echo((Usr_Tsc_PATH."/NotLogin.css")); ?>">
 
 <div class="mdui-container-fluid">
-    <div class="mdui-row Back-E1">
-    
-        <div class="mdui-col-xs-12 mdui-valign mdui-hidden-sm-down">
-            <div class="mdui-chip">
-              <span class="mdui-chip-icon">Bio</span>
-              <span class="mdui-chip-title"><span class="mdui-chip-title"><span id="rand-character"></span></span>
-            </div>
-        </div>
-    
-    	<div class="mdui-col-xs-12">
-          <img class="mdui-img-circle mdui-center" src="https://s6.cccc.ac.cn/2020/02/27/b6b36f97f9ab3.png" style="width: 140px;
-    height: 140px;"/>
-    	</div>
-    </div>
-    
-    <div class="mdui-row">
-      <div class="mdui-col-xs-6 comment-section"></div>
-      <div class="mdui-col-xs-6 mdui-float-right SetButton">
-        <button class="mdui-fab mdui-hidden-sm-down mdui-color-theme-accent mdui-ripple"><i class="mdui-icon material-icons"></i></button>
+	
+<div class="mdui-row Back-E1" style="position: relative">
+		
+      <div class="mdui-col-xs-12">
+		<img class="mdui-img-circle mdui-center" src="https://s6.cccc.ac.cn/2020/02/27/b6b36f97f9ab3.png" style="width: 140px;height: 140px;"/>
       </div>
-    </div>
-
+      
+	<div class="mdui-container-fluid">      
+		<div class="waveWrapper waveAnimation">
+		  <div class="waveWrapperInner bgTop">
+		    <div class="wave waveTop" style="background-image: url('https://s6.cccc.ac.cn/2020/03/26/b6c17bc3bfa19.png')"></div>
+		  </div>
+		  <div class="waveWrapperInner bgMiddle">
+		    <div class="wave waveMiddle" style="background-image: url('https://s6.cccc.ac.cn/2020/03/26/954a644eb1a23.png')"></div>
+		  </div>
+		  <div class="waveWrapperInner bgBottom">
+		    <div class="wave waveBottom" style="background-image: url('https://s6.cccc.ac.cn/2020/03/26/9d890dbdc088f.png')"></div>
+		  </div>
+		</div>         
+	</div> 
+	
+</div>
 
     <style>
         .pec-List-headimg {
@@ -48,9 +48,6 @@
             line-height: 19px;
             background-color: #f6f6f6;
         }
-        .body-bg{
-            background-image:url('https://i.loli.net/2019/08/01/5d429efba945476667.png');
-        }
         .body-tm{
             opacity:0.85;
             filter:alpha(opacity=15);
@@ -67,7 +64,9 @@
        background-repeat:no-repeat;
         }
     </style>
-<br/>
+    
+	<br/>
+
     <div class="mdui-container">
         <div class="mdui-row">
             <div class="mdui-col-xs-1 mdui-col-sm-3"></div>
@@ -121,6 +120,7 @@
                 
             <div class="mdui-col-xs-1 mdui-col-sm-3"></div>
         </div>
+        
     <br/>
     <br/>
 

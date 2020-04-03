@@ -25,12 +25,11 @@
 	<a href='https://gitee.com/LychApe/AirBee/stargazers'><img src='https://gitee.com/LychApe/AirBee/badge/star.svg?theme=dark' alt='star'></img></a>
 </footer>
 
-
 <!-- 返回顶部js -->
+<script src="//cdn.bootcss.com/mdui/0.4.3/js/mdui.min.js"></script>
 <script type="text/javascript">
-// 当网页向下滑动 30px 出现"返回顶部" 按钮
 window.onscroll = function() {scrollFunction()};
- 
+// 当网页向下滑动 30px 出现"返回顶部" 按钮
 function scrollFunction() {console.log(121);
     if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
         document.getElementById("myBtn").style.display = "block";
@@ -43,5 +42,12 @@ function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
+
+var $$ = mdui.JQ;
+$$('#myBtn').on('click', function () {
+  mdui.snackbar({
+    message: '啊！撞到头辣！(๑╹っ╹๑)',
+    position: 'right-top'
+  });
+});
 </script>
-<script src="//cdn.bootcss.com/mdui/0.4.3/js/mdui.min.js"></script>

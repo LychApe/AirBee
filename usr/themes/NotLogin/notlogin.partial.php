@@ -55,7 +55,7 @@
 			    </div>
 			    
 			    <div class="mdui-col">
-			        <div class="mdui-card mdui-shadow-3 mdui-hoverable" style="border-radius: 15px; background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);">
+			        <div class="mdui-card mdui-shadow-3 mdui-hoverable" style="border-radius: 15px; background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);" mdui-dialog="{target: '#comment'}">
 			        <div class="mdui-card-primary">
 			          <div class="mdui-card-primary-title" style="color: #f0f0f0;">留言</div>
 			          <div class="mdui-card-primary-subtitle" style="color: #f0f0f0;">comment</div>
@@ -278,3 +278,50 @@
         "夙兴夜寐，无忝尔所生"
       ]);
    </script>
+   
+<div class="mdui-dialog" id="comment">
+    <div class="mdui-dialog-content">
+      <div class="mdui-dialog-title">Comment</div>
+
+
+        <div class="mdui-card mdui-shadow-0">
+          <div class="mdui-row">
+          <form action="" method="post" accept-charset="utf-8">
+              <!--Card_1-->
+                  <div class="mdui-col-lg-12">
+                  <div class="mdui-col-sm-12">
+                  <div class="mdui-textfield">
+                      <i class="mdui-icon material-icons">mode_comment</i>
+                      <input class="mdui-textfield-input" name="Message" type="text" placeholder="Message"/>
+                  </div>
+                  </div>
+                  </div>
+              <!--Card_2-->
+                <div class="mdui-col-lg-6">
+                <div class="mdui-col-sm-12">
+                    <div class="mdui-textfield">
+                        <i class="mdui-icon material-icons">account_circle</i>
+                        <input class="mdui-textfield-input" name="User" type="text" placeholder="User"/>
+                    </div>
+                </div>
+                </div>
+                <div class="mdui-col-lg-6">
+                <div class="mdui-col-sm-12">
+                  <div class="mdui-textfield">
+                  <link href="https://cdn.bootcss.com/fontawesome-iconpicker/3.2.0/css/fontawesome-iconpicker.css" rel="stylesheet">
+                      <i class="mdui-icon fa fa-qq fa-fw "></i>
+                      <input class="mdui-textfield-input" name="QQ" type="number" min="5" placeholder="QQ"/>
+                  </div>
+                </div>
+                </div>
+            </form>
+          </div>
+        </div>
+
+
+    </div>
+    <div class="mdui-dialog-actions">
+    	<button class="mdui-btn mdui-ripple" id="Post" mdui-dialog-close>Send</button>
+      <button class="mdui-btn mdui-ripple" mdui-dialog-confirm>Quit</button>
+    </div>
+</div>
