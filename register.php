@@ -46,6 +46,12 @@ function Register(){
     
 }
 
+$user = new User();
+
+if($user->Check_Group("guest")){
+    header("location: ./index.php");
+}
+
 #页面参数赋值
 $page['body'] = 'mdui-drawer-body-left mdui-appbar-with-toolbar mdui-theme-primary-indigo mdui-theme-accent-pink';
 $body = "register.partial.php";

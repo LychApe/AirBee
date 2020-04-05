@@ -9,8 +9,8 @@
     border-radius: 0px
     }
 </style>
-    <div class="mdui-drawer mdui-color-grey-50" id="main-drawer">
-      <div class="mdui-list" mdui-collapse="{accordion: true}" style="margin-bottom: 76px;">
+    <div class="mdui-drawer mdui-color-grey-50 " id="main-drawer" >
+      <div class="mdui-list" mdui-collapse="{accordion:true}" style="margin-bottom: 76px;">
             
       <div class="mdui-card FnB_IMG">
         <div class="mdui-card-media">

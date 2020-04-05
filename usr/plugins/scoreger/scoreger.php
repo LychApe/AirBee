@@ -28,7 +28,7 @@
 <script src="https://cdn.bootcss.com/echarts/4.6.0/echarts.js"></script>
 <script  type="text/javascript">
 // 第二个参数可以指定前面引入的主题
-var myChart = echarts.init(document.getElementById('main-1'));
+var myChart1 = echarts.init(document.getElementById('main-1'));
 
 var dataStyle = {
     normal: {
@@ -215,7 +215,7 @@ option = {
     }]
 }
 // 使用刚指定的配置项和数据显示图表。
-myChart.setOption(option);
+myChart1.setOption(option);
 </script>
 
 <script  type="text/javascript">
