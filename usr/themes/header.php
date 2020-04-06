@@ -3,7 +3,8 @@
         <span class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white" mdui-drawer="{target: '#main-drawer', swipe: true}"><i class="mdui-icon material-icons">&#xe3e7;</i></span>
         <a href="" class="mdui-typo-title">AirBee</a>
         <div class="mdui-toolbar-spacer">Cherry</div>
-        <a class="mdui-btn mdui-btn-icon" onclick="window.history.go(0)"><i class="mdui-icon material-icons">&#xe863;</i></a>
+        <a class="mdui-btn mdui-btn-icon" onclick="window.history.go(0)" onLoad="javascript:document.yourFormName.reset()"
+><i class="mdui-icon material-icons">&#xe863;</i></a>
     </div>
 </header>
 <!--<script>

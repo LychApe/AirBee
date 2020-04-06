@@ -148,9 +148,52 @@
 		  	</div>
 		  	<br/>
 		  	<!--#2-->
-		  	<div class="mdui-card">
-		  		
+		  	<div class="mdui-card" style=" border-radius: 13px; background-image: linear-gradient(to right, #afb4b3 0%, #dbdbd8 100%);">
+		        <div class="mdui-card-primary">
+		          <div class="mdui-card-primary-title" style="color: #d6d7d9;">最新留言</div>
+		        </div>
+		        <div class="mdui-divider"></div>
+		    	<div class="" style="color: #d6d7d9;">
+		        	
+<div class="timeline-small">
+    <div class="timeline-small-body">
+        <ul>
+            <li>
+                <div class="bullet pink"></div>
+				<div class="mdui-chip" id="ERRO-404" style="color: #9fa09e;">
+				  <img class="mdui-chip-icon" src="https://q2.qlogo.cn/headimg_dl?dst_uin=599487077@qq.com&spec=640"/>
+				  <span class="mdui-chip-title mdui-text-truncate" style="max-width: 150px;">GKD !!!</span>
+				</div>
+            </li>
+            <li>
+                <div class="bullet orange"></div>
+				<div class="mdui-chip" id="ERRO-404" style="color: #9fa09e;">
+				  <img class="mdui-chip-icon" src="https://q2.qlogo.cn/headimg_dl?dst_uin=838214611@qq.com&spec=640"/>
+				  <span class="mdui-chip-title mdui-text-truncate" style="max-width: 150px;">吃!吃!吃! 吃nm!</span>
+				</div>
+            </li>
+            <li>
+                <div class="bullet green"></div>
+				<div class="mdui-chip" id="ERRO-404" style="color: #9fa09e;">
+				  <img class="mdui-chip-icon" src="https://i.loli.net/2020/02/26/NCnhiD7keYlmuF2.jpg"/>
+				  <span class="mdui-chip-title mdui-text-truncate" style="max-width: 150px;">成电大佬，文笔上佳</span>
+				</div>
+            </li>
+            <li>
+                <div class="bullet blue"></div>
+				<div class="mdui-chip" id="ERRO-404" style="color: #9fa09e;">
+				  <img class="mdui-chip-icon" src="https://secure.gravatar.com/avatar/b1cd9865b14da113a093860b0f71e16d?s=500&r=X&d="/>
+				  <span class="mdui-chip-title mdui-text-truncate" style="max-width: 150px;">23333333333333333333333333333333333333333333333333</span>
+				</div>
+            </li>
+        </ul>
+    </div>
+</div>
+		        	
+		        </div>
 		  	</div>
+		  	<br/>
+		  	<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height=86 src="//music.163.com/outchain/player?type=2&id=34125094&auto=0&height=66"></iframe>
 		  	<br/>
 		  </div>
 		  
@@ -193,7 +236,89 @@
     }
 </style>
 
-
+    <style>
+        .timeline-small {
+            max-width: -webkit-fill-available;
+            max-height: 630px;
+            overflow: hidden;
+            box-shadow: 0 0 40px #a0a0a0;
+            font-family: 'Open Sans', sans-serif;
+        }
+        .timeline-small-body ul {
+            padding: 1em 0 0 2em;
+            margin: 0;
+            list-style: none;
+            position: relative;
+        }
+        .timeline-small-body ul::before {
+            content: ' ';
+            height: 100%;
+            width: 5px;
+            background-color: #d9d9d9;
+            position: absolute;
+            top: 0;
+            left: 2.4em;
+            z-index: 1;
+        }
+        .timeline-small-body li div {
+            display: inline-block;
+            margin: 1em 0;
+            vertical-align: top;
+        }
+        .timeline-small-body .bullet {
+            width: 1rem;
+            height: 1rem;
+            box-sizing: border-box;
+            border-radius: 50%;
+            background: #fff;
+            z-index: 1;
+            margin-right: 1rem;
+            margin-top: 7%;
+        }
+        .timeline-small-body .bullet.pink {
+            background-color: hotpink;
+            border: 3px solid #F93B69;
+            z-index: 2;
+    		position: relative;
+        }
+        .timeline-small-body .bullet.green {
+            background-color: lightseagreen;
+            border: 3px solid #B0E8E2;.
+            z-index: 2;
+    		position: relative;
+        }
+        .timeline-small-body .bullet.blue {
+            background-color: aquamarine;
+            border: 3px solid cadetblue;
+            z-index: 2;
+    		position: relative;
+        }
+        .timeline-small-body .bullet.orange {
+            background-color: salmon;
+            border: 3px solid #EB8B6E;
+            z-index: 2;
+    		position: relative;
+        }
+        .timeline-small-body .date {
+            font-size: 0.75em;
+            padding-top: 0.40rem;
+            padding-right: 2rem;
+        }
+        .timeline-small-body .desc {
+            width: 50%;
+        }
+        .timeline-small-body h3 {
+            font-size: 0.9em;
+            font-weight: 400;
+            margin: 0;
+        }
+        .timeline-small-body h4 {
+            margin: 0;
+            font-size: 0.7em;
+            font-weight: 400;
+            color: #808080;
+        }
+    </style>
 
 <script>
       function randomCharacter(element,characters=["UNDEFINED"]){
@@ -309,7 +434,7 @@
                 <div class="mdui-col-sm-12">
                   <div class="mdui-textfield">
                   <link href="https://cdn.bootcss.com/fontawesome-iconpicker/3.2.0/css/fontawesome-iconpicker.css" rel="stylesheet">
-                      <i class="mdui-icon fa fa-qq fa-fw "></i>
+                      <i class="mdui-icon material-icons">&#xe90f;</i>
                       <input class="mdui-textfield-input" name="QQ" type="number" min="5" placeholder="QQ"/>
                   </div>
                 </div>

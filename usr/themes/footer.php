@@ -24,7 +24,7 @@
         <a href="#top" class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-pink" id="myBtn">
           <i class="mdui-icon material-icons">&#xe5d8;</i></a>
           <a href="#" class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-pink">
-            <i class="mdui-icon material-icons">&#xe5c4;</i></a>
+            <i class="mdui-icon material-icons">&#xe243;</i></a>
       </div>
   </div>
 <footer class="foot mdui-text-center  AB-footer-morden">
@@ -49,7 +49,7 @@ $$('#myBtn').on('click', function () {
   });
 });
 var $$ = mdui.JQ;
-$$('#ERRO_404').on('click', function () {
+$$('#ERRO-404').on('click', function () {
   mdui.snackbar({
     message: '当前状态不支持辣！(๑╹っ╹๑)',
     position: 'right-top'
@@ -64,6 +64,26 @@ function scrollFunction() {console.log(121);
     }
 }
 </script>
+
+<div class="mdui-dialog" id="ABOUT_AirBee">
+    <div class="mdui-dialog-title">AirBee</div>
+        <div class="mdui-dialog-content">
+        <blockquote>
+				</p> 
+				<div class="mdui-typo">       
+				<p>开发者: <a href="https://hanfen.run" target="_blank">HanFen</a> 
+                <p>鸣谢: <a href="https://github.com/DFFZMXJ" target="_blank">学神之女</a> | <a href="https://cicn.uk.to/" target="_blank">Kafea</a> | <a href="#" target="_blank">萌萌的小树苗</a></p>
+                <p>首席赞助商: <a href="https://bearhosting.co.uk/aff.php?aff=4" target="_blank">BearHosting</a> | <a href="https://whitebear.life/" target="_blank">WhiteBear</a></p>
+                <p>开发组QQ群: 1034830519</p>
+				</div>
+				<footer>© Copyright 2019-2020 by LychApe All rights are reserved.</footer>
+		</blockquote>
+            </div>
+            <div class="mdui-dialog-actions">
+              <button class="mdui-btn mdui-ripple" mdui-dialog-close>知 道 啦 !</button>
+            </div>
+</div>
+
 <style>
 .size-watch{
 	width: -webkit-fill-available;

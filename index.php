@@ -28,10 +28,8 @@ die();
 }
 
 require(AirBee_PATH.'/AirBee/include/user.php');
-require(AirBee_PATH.'/AirBee/include/set.php');
 
 $user = new User();
-$set = new Set();
 
 if(!$user->Check_Logon()){
     #页面参数赋值
@@ -40,6 +38,6 @@ if(!$user->Check_Logon()){
 	require(Usr_T_PATH.'/NotLogin/main.php');
 }
 if($user->Check_Group("guest")){
-    header("location: user.php");
+    header("location: /?User=Home");
 }
 
