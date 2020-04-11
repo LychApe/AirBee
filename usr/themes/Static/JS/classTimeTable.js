@@ -49,6 +49,8 @@
         'bg-color-8',
         'bg-color-9',
         'bg-color-10',
+        'bg-color-11',
+        'bg-color-12',
     ];
 }
 
@@ -108,17 +110,18 @@ ClassTimeTable.prototype = {
     //更新横跨 1、2、3...行的 css样式
     updateColCss: function(){
         let one = document.querySelector(this.Config['selector']+" > div.ct-body > div:nth-child(1) > div:nth-child(1)").offsetHeight;
-        var css = '.ct-body .ct-cr .ct-td.col-1 {height: '+(one-11)+'px}' +
-            '.ct-body .ct-cr .ct-td.col-2 {height: '+(one*2-11)+'px}' +
-            '.ct-body .ct-cr .ct-td.col-3 {height: '+(one*3-11)+'px}' +
-            '.ct-body .ct-cr .ct-td.col-4 {height: '+(one*4-11)+'px}' +
-            '.ct-body .ct-cr .ct-td.col-5 {height: '+(one*5-11)+'px}' +
-            '.ct-body .ct-cr .ct-td.col-6 {height: '+(one*6-11)+'px}' +
-            '.ct-body .ct-cr .ct-td.col-7 {height: '+(one*7-11)+'px}' +
-            '.ct-body .ct-cr .ct-td.col-8 {height: '+(one*8-11)+'px}' +
-            '.ct-body .ct-cr .ct-td.col-9 {height: '+(one*9-11)+'px}' +
-            '.ct-body .ct-cr .ct-td.col-10 {height: '+(one*10-11)+'px}'+
-            '.ct-body .ct-cr .ct-td.col-1 {height: '+(one*11-11)+'px}';
+        var css = '.ct-body .ct-cr .ct-td.col-1 {height: '+(one-12)+'px}' +
+            '.ct-body .ct-cr .ct-td.col-2 {height: '+(one*2-12)+'px}' +
+            '.ct-body .ct-cr .ct-td.col-3 {height: '+(one*3-12)+'px}' +
+            '.ct-body .ct-cr .ct-td.col-4 {height: '+(one*4-12)+'px}' +
+            '.ct-body .ct-cr .ct-td.col-5 {height: '+(one*5-12)+'px}' +
+            '.ct-body .ct-cr .ct-td.col-6 {height: '+(one*6-12)+'px}' +
+            '.ct-body .ct-cr .ct-td.col-7 {height: '+(one*7-12)+'px}' +
+            '.ct-body .ct-cr .ct-td.col-8 {height: '+(one*8-12)+'px}' +
+            '.ct-body .ct-cr .ct-td.col-9 {height: '+(one*9-12)+'px}' +
+            '.ct-body .ct-cr .ct-td.col-10 {height: '+(one*10-12)+'px}'+
+            '.ct-body .ct-cr .ct-td.col-11 {height: '+(one*11-12)+'px}'+
+            '.ct-body .ct-cr .ct-td.col-12 {height: '+(one*12-12)+'px}';
 
         var head = document.head || document.getElementsByTagName('head')[0];
         var style = document.createElement('style');

@@ -6,15 +6,16 @@
 	</div>
 </div>
 <br/>
+<!-- PC !-->
 <div class="mdui-container">
-    <div class="mdui-row-xs-2">
+    <div class="mdui-hidden-sm-down mdui-row-xs-2">
     	
 	  <div class="mdui-col">
 		<div class="mdui-card mdui-shadow-6" style="border-radius: 18px; ">
 			<div id="main-2" style="width: 100%;height:300px;"></div>
 		</div>
 	  </div>
-	  
+	  <br class="mdui-hidden-md-up"/>
 	  <div class="mdui-col">
 		<div class="mdui-card mdui-shadow-6" style="border-radius: 18px; ">
 			<div id="main-3" style="width: 100%;height:300px;"></div>
@@ -23,6 +24,27 @@
 	  
 	</div>
 </div>
+
+<!-- PE !-->
+<div class="mdui-container">
+    <div class="mdui-hidden-md-up mdui-col-sm-12">
+    	
+	  <div class="mdui-col">
+		<div class="mdui-card mdui-shadow-6" style="border-radius: 18px; ">
+			<div id="main-2" style="width: 100%;height:300px;"></div>
+		</div>
+	  </div>
+	  <br/>
+	  <div class="mdui-col">
+		<div class="mdui-card mdui-shadow-6" style="border-radius: 18px; ">
+			<div id="main-3" style="width: 100%;height:300px;"></div>
+		</div>
+	  </div>
+	  
+	</div>
+</div>
+
+
 <br/>
 <br/>
 <script src="https://cdn.bootcss.com/echarts/4.6.0/echarts.js"></script>

@@ -34,7 +34,7 @@
     <div class="mdui-container">
     	
         <div class="mdui-card-content">
-		<div class="mdui-row-xs-3 mdui-hidden-xs-down" style="transform: translateY(50%);z-index: 3;position: inherit;">
+		<div class="mdui-row-xs-3 mdui-hidden-xs-down" style="transform: translateY(65%);z-index: 3;position: inherit;">
         	  	
 			    <div class="mdui-col">
 			        <div class="mdui-card mdui-shadow-3 mdui-hoverable" style="border-radius: 15px; background-image: linear-gradient(60deg, #29323c 0%, #485563 100%); ">
