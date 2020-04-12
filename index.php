@@ -11,7 +11,8 @@ AirBee_PathM::Go();
 
 #页面参数赋值_A01
 $page['body'] = 'mdui-drawer-body-left mdui-appbar-with-toolbar mdui-theme-primary-indigo mdui-theme-accent-pink';
-
+require(AirBee_PATH.'/AirBee/include/user.php');
+$user = new User();
 #路由
 if($_GET["User"]=="Register"){
 include("register.php");
@@ -22,8 +23,6 @@ include("login.php");
 die();	
 }
 if($_GET["User"]=="Home"){
-require(AirBee_PATH.'/AirBee/include/user.php');
-$user = new User();
 	if(!$user->Check_Logon()){
 		header("location: ?User=Login");
 	}

@@ -14,6 +14,13 @@ class User extends AirBee_DB{
         $data = empty(parent::fetch_one('uid',$username))?parent::fetch_one('username',$username):parent::fetch_one('uid',$username);
         return empty($data)?parent::fetch_one('email',$username):$data;
 	}
+
+    # QInfo() 
+	public function QInfo()
+	{
+		$sentence = "SELECT * FROM `$this->table` WHERE uid = '{$_SESSION['username']}' OR username = '{$_SESSION['username']}' OR email = '{$_SESSION['username']}' limit 1";
+		return parent::fetch($sentence);
+	}    	
 	
 	# Group($user) 获取用户分组 返回组别string
 	public function Group($username)

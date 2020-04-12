@@ -20,7 +20,13 @@
             <?php if(!$user->Check_Logon()){ ?>
 	         <div class="mdui-card-primary-subtitle mdui-text-center" style="font-weight:900;">AirBee</div>
 	         <?php } else { ?>
-	         <div class="mdui-card-primary-subtitle mdui-text-center" style="font-weight:900;"><?php echo($_SESSION['username']); ?></div>
+	         <div class="mdui-card-primary-subtitle mdui-text-center" style="font-weight:900;">
+	         	<?php 
+	         	$row = $user->QInfo();
+	         	#var_dump($row['username']);
+	         	echo( $row[0]['username'] );
+	         	?>
+	         </div>
 	         <?php } ?> 
             </div>
           </div>

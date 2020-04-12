@@ -92,7 +92,7 @@ class AirBee_DB
 	 * $xxxx ->fetch($sentence,$obj=array());
 	 * 可以多个条件，返回多个结果
 	 **/
-	private function fetch($sentence,$obj=array()){
+	public function fetch($sentence,$obj=array()){
 		$stmt = $this->db->prepare($sentence);
 		$stmt->execute($obj);
 		$stmt->setFetchMode(PDO::FETCH_ASSOC);
@@ -136,8 +136,4 @@ class AirBee_DB
     }
 	 
 }
-#$db = new AirBee_DB();
-#if($db->numRows("SELECT * FROM `user` WHERE `username` = 'admin'")>0){
-#    			echo "<script>alert('用户名已经存在！')</script>";
-#}
 ?>
