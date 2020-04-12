@@ -21,6 +21,14 @@ if($_GET["User"]=="Login"){
 include("login.php");
 die();	
 }
+if($_GET["User"]=="Home"){
+
+require(AirBee_PATH.'/AirBee/include/user.php');
+$user = new User();
+$body = "home.php";
+require(Usr_T_PATH.'/main.php');
+die();	
+}
 if($_GET["App"]=="scoreger"){
 $body = (Usr_P_PATH.'/scoreger/scoreger.php');
 require(Usr_T_PATH.'/main.php');
@@ -28,7 +36,6 @@ die();
 }
 
 require(AirBee_PATH.'/AirBee/include/user.php');
-
 $user = new User();
 
 if(!$user->Check_Logon()){
@@ -38,6 +45,6 @@ if(!$user->Check_Logon()){
 	require(Usr_T_PATH.'/NotLogin/main.php');
 }
 if($user->Check_Group("guest")){
-    header("location: /?User=Home");
+    header("location: ?User=Home");
 }
 

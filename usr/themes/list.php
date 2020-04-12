@@ -17,7 +17,11 @@
           <img src="https://api.ixiaowai.cn/gqapi/gqapi.php"/>
           <div class="mdui-card-media-covered">
             <div class="mdui-card-primary">
-	         <div class="mdui-card-primary-subtitle font-weight:900;">AirBee</div>
+            <?php if(!$user->Check_Logon()){ ?>
+	         <div class="mdui-card-primary-subtitle mdui-text-center" style="font-weight:900;">AirBee</div>
+	         <?php } else { ?>
+	         <div class="mdui-card-primary-subtitle mdui-text-center" style="font-weight:900;"><?php echo($_SESSION['username']); ?></div>
+	         <?php } ?> 
             </div>
           </div>
         </div>
@@ -29,6 +33,7 @@
                 <div class="mdui-list-item-content">首  页</div>
               </li>
             </a>
+
             <div class="mdui-collapse-item mdui-collapse-item-dense">
               <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
                 <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-deep-purple">account_box</i>
@@ -37,19 +42,29 @@
               </div>
               
               <div class="mdui-collapse-item-body mdui-list">
+              	<?php if(!$user->Check_Logon()){ ?>
                 <a href="<?php echo $GLOBALS['url'] ?>/?User=Login">
                     <li class="mdui-list-item mdui-ripple">
-                        <i class="mdui-list-item-icon mdui-icon material-icons">https</i>
                         <div class="mdui-list-item-content">登陆</div>
                   </li>
                 </a>
-                
                 <a href="<?php echo $GLOBALS['url'] ?>/?User=Register">
                     <li class="mdui-list-item mdui-ripple">
-                        <i class="mdui-list-item-icon mdui-icon material-icons">group_add</i>
                         <div class="mdui-list-item-content">注册</div>
                     </li>
                 </a>
+                <?php } else { ?>
+                <a href="<?php echo $GLOBALS['url'] ?>/?User==xxx">
+                    <li class="mdui-list-item mdui-ripple">
+                        <div class="mdui-list-item-content">用户信息</div>
+                  </li>
+                </a>
+                <a href="<?php echo $GLOBALS['url'] ?>/logout.php">
+                    <li class="mdui-list-item mdui-ripple">
+                        <div class="mdui-list-item-content">安全退出</div>
+                    </li>
+                </a>                
+                <?php } ?>  
               </div>
             </div>
             

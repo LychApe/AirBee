@@ -20,7 +20,7 @@
         #var_Path
         $Path = str_replace('\\','/',__FILE__); 
         define('AirBee_PATH', dirname($Path));
-        
+        	define('Admin_PATH', AirBee_PATH . '/');
         #Root_PATH
         #define('ROOT_PATH', 'dirname(AirBee_PATH)');
         define('ROOT_PATH', '.');
