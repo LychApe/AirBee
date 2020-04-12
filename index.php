@@ -22,12 +22,14 @@ include("login.php");
 die();	
 }
 if($_GET["User"]=="Home"){
-
 require(AirBee_PATH.'/AirBee/include/user.php');
 $user = new User();
-$body = "home.php";
-require(Usr_T_PATH.'/main.php');
-die();	
+	if(!$user->Check_Logon()){
+		header("location: ?User=Login");
+	}
+	$body = "home.php";
+	require(Usr_T_PATH.'/main.php');
+	die();	
 }
 if($_GET["App"]=="scoreger"){
 $body = (Usr_P_PATH.'/scoreger/scoreger.php');
