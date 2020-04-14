@@ -3,139 +3,211 @@
 <div class="mdui-container-fluid">
     <div class="mdui-row Back-E1" style="position: relative">
     
-          <div class="mdui-col-xs-12 mdui-valign">
+          <div class="mdui-col-xs-12 mdui-valign mdui-hidden-xs-down">
             <div class="mdui-chip" style="background: linear-gradient(-20deg, #ddd6f3 0%, #faaca8 100%, #faaca8 100%);">
-              <!--<span class="mdui-chip-icon">Bio</span>!-->
               <span class="mdui-chip-title"><span class="mdui-chip-title">鲁迅说：“<span id="rand-character"></span>”</span>
             </div>
          </div>
     
-      <div class="mdui-col-xs-12">
-	<img class="mdui-img-circle mdui-center" src="https://s6.cccc.ac.cn/2020/02/27/b6b36f97f9ab3.png" style="width: 140px;
-	    height: 140px;"/>
-      </div>
+    
+    <div class="mdui-col-xs-12">
+	<img class="mdui-img-circle mdui-center" src="https://s6.cccc.ac.cn/2020/02/27/b6b36f97f9ab3.png" style="width: 140px;height: 140px;"/>
+    </div>
       
-<div class="mdui-container-fluid">      
-<div class="waveWrapper waveAnimation">
-  <div class="waveWrapperInner bgTop">
-    <div class="wave waveTop" style="background-image: url('https://s6.cccc.ac.cn/2020/03/26/b6c17bc3bfa19.png')"></div>
-  </div>
-  <div class="waveWrapperInner bgMiddle">
-    <div class="wave waveMiddle" style="background-image: url('https://s6.cccc.ac.cn/2020/03/26/954a644eb1a23.png')"></div>
-  </div>
-  <div class="waveWrapperInner bgBottom">
-    <div class="wave waveBottom" style="background-image: url('https://s6.cccc.ac.cn/2020/03/26/9d890dbdc088f.png')"></div>
-  </div>
-</div>         
-</div> 
+	<div class="mdui-container-fluid">      
+		<div class="waveWrapper waveAnimation">
+		  <div class="waveWrapperInner bgTop mdui-hidden-xs-down">
+		    <div class="wave waveTop" style="background-image: url('https://s6.cccc.ac.cn/2020/03/26/b6c17bc3bfa19.png')"></div>
+		  </div>
+		  <div class="waveWrapperInner bgMiddle">
+		    <div class="wave waveMiddle" style="background-image: url('https://s6.cccc.ac.cn/2020/03/26/954a644eb1a23.png')"></div>
+		  </div>
+		  <div class="waveWrapperInner bgBottom">
+		    <div class="wave waveBottom" style="background-image: url('https://s6.cccc.ac.cn/2020/03/26/9d890dbdc088f.png')"></div>
+		  </div>
+		</div>         
+	</div> 
 
     </div>
     
     <div class="mdui-container">
-    	
         <div class="mdui-card-content">
+        <!--PC-->
 		<div class="mdui-row-xs-3 mdui-hidden-xs-down" style="transform: translateY(65%);z-index: 3;position: inherit;">
-        	  	
+				<!--PC-1-->
 			    <div class="mdui-col">
-			        <div class="mdui-card mdui-shadow-3 mdui-hoverable" style="border-radius: 15px; background-image: linear-gradient(60deg, #29323c 0%, #485563 100%); ">
-			        <div class="mdui-card-primary">
-			          <div class="mdui-card-primary-title" style="color: #f0f0f0;">名片</div>
-			          <div class="mdui-card-primary-subtitle" style="color: #f0f0f0;">Card</div>
-			        </div>
-			        </div>
-			    </div>
-			    
-			    <div class="mdui-col">
-			        <div class="mdui-card mdui-shadow-3 mdui-hoverable" style="border-radius: 15px; background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);">
+			    <div class="mdui-card mdui-shadow-3 mdui-hoverable" style="border-radius: 15px; background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);">
+			        <a href="#" style="text-decoration: none;">
 			        <div class="mdui-card-primary">
 			          <div class="mdui-card-primary-title" style="color: #f0f0f0;">博客</div>
 			          <div class="mdui-card-primary-subtitle" style="color: #f0f0f0;">Blog</div>
 			        </div>
-			        </div>
+			        </a>
 			    </div>
-			    
+			    </div>
+			    <!--PC-2-->
 			    <div class="mdui-col">
-			        <div class="mdui-card mdui-shadow-3 mdui-hoverable" style="border-radius: 15px; background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);" mdui-dialog="{target: '#comment'}">
+			    <div class="mdui-card mdui-shadow-3 mdui-hoverable" style="border-radius: 15px; background-image: linear-gradient(60deg, #29323c 0%, #485563 100%); ">
+			        <a href="#" style="text-decoration: none;">
+			        <div class="mdui-card-primary">
+			          <div class="mdui-card-primary-title" style="color: #f0f0f0;">名片</div>
+			          <div class="mdui-card-primary-subtitle" style="color: #f0f0f0;">Card</div>
+			        </div>
+			        </a>
+			    </div>
+			    </div>
+			    <!--PC-3-->
+			    <div class="mdui-col">
+			    <div class="mdui-card mdui-shadow-3 mdui-hoverable" style="border-radius: 15px; background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);" mdui-dialog="{target: '#comment'}">
 			        <div class="mdui-card-primary">
 			          <div class="mdui-card-primary-title" style="color: #f0f0f0;">留言</div>
 			          <div class="mdui-card-primary-subtitle" style="color: #f0f0f0;">comment</div>
 			        </div>
-			        </div>
+			    </div>
 				</div>
-
-			  </div>
-        	  <div class="mdui-row-xs-3 mdui-hidden-sm-up">
-        	  	
+		</div>
+		<!--PE-->
+    	<div class="mdui-row-xs-3 mdui-hidden-sm-up">
+    		    <!--PE-1-->
 			    <div class="mdui-col">
-			        <div class="mdui-card mdui-shadow-3 mdui-hoverable" style="border-radius: 15px; background-color: #FAFAFA;">
+			    <div class="mdui-card mdui-shadow-3 mdui-hoverable" style="border-radius: 15px; background-color: #FAFAFA;">
 			        <div class="mdui-card-primary" style="text-align: center;">
 			          <div class="mdui-card-primary-title">
-    <i class="mdui-icon material-icons" style="
-    font-size: 32px;
-">contacts</i>
-</div>
+			          	<i class="mdui-icon material-icons" style="font-size: 32px;">contacts</i>
+		         	  </div>
 			          <div class="mdui-card-primary-subtitle">名片</div>
 			        </div>
-			        </div>
 			    </div>
-			    
+			    </div>
+			    <!--PE-2-->
 			    <div class="mdui-col">
-			        
 			    <div class="mdui-card mdui-shadow-3 mdui-hoverable" style="border-radius: 15px; background-color: #FAFAFA;">
-			        <div class="mdui-card-primary" style="
-    text-align: center;
-">
+			        <div class="mdui-card-primary" style="text-align: center;">
 			          <div class="mdui-card-primary-title">
-    <i class="mdui-icon material-icons" style="
-    font-size: 32px;
-">library_books</i>
-</div>
+						 <i class="mdui-icon material-icons" style="font-size: 32px;">library_books</i>
+					  </div>
 			          <div class="mdui-card-primary-subtitle">博客</div>
 			        </div>
-			        </div></div>
-			    
+			    </div>
+			    </div>
+			    <!--PE-3-->
 			    <div class="mdui-col">
-			        
 				<div class="mdui-card mdui-shadow-3 mdui-hoverable" style="border-radius: 15px; background-color: #FAFAFA;">
-			        <div class="mdui-card-primary" style="
-    text-align: center;
-">
+			        <div class="mdui-card-primary" style="text-align: center;">
 			          <div class="mdui-card-primary-title">
-    <i class="mdui-icon material-icons" style="
-    font-size: 32px;
-">comment</i>
-</div>
+    					<i class="mdui-icon material-icons" style="font-size: 32px;">comment</i>
+					  </div>
 			          <div class="mdui-card-primary-subtitle">留言</div>
 			        </div>
-			        </div></div>
-
-			  </div>
+			    </div>
+			    </div>
+		</div>
         </div>
-        </div>
+    </div>
+
+<!--PE-->
+		<div class="mdui-col-xs-12 mdui-hidden-sm-up">
+		  	<div class="mdui-card mdui-shadow-5 mdui-hoverable">
+		        <div class="mdui-card-primary">
+		          <div class="mdui-card-primary-title">女装从零到无数</div>
+		        </div>
+		    <div class="mdui-divider"></div> 
+			<div class="mdui-card-header" style="background-color: whitesmoke;">
+            	<div class="mdui-row">
+	                <div class="mdui-col-xs-11">   
+	                  <span itemprop="image">
+	                  <img class="mdui-card-header-avatar" src="https://s6.cccc.ac.cn/2020/02/27/b6b36f97f9ab3.png">
+	                  </span>
+	                  <div class="mdui-card-header-title">AirBee</div>
+	                  <div class="mdui-card-header-subtitle">2020-04-14</div>
+	                </div>
+	                <div class="mdui-col-xs-1" style="transform: translateY(-95%);">   
+	            	<a href="" class="mdui-btn mdui-btn-icon mdui-color-grey-100 mdui-ripple mdui-float-right"><i class="mdui-icon material-icons" style="color: #e0e0e0;">&#xe31c;</i></a>
+	                </div>
+			    </div>
+		  	</div>		
+			</div>
+<BR/>
+		<div class="mdui-card mdui-shadow-5 mdui-hoverable">
+			<div class="mdui-card-primary">
+		    	<div class="mdui-card-primary-title">欢迎使用 AirBee</div>
+		    </div>
+		    <div class="mdui-divider"></div> 
+			<div class="mdui-card-header" style="background-color: whitesmoke;">
+            	<div class="mdui-row">
+	                <div class="mdui-col-xs-11">   
+		                <span itemprop="image">
+		                <img class="mdui-card-header-avatar" src="https://s6.cccc.ac.cn/2020/02/27/b6b36f97f9ab3.png">
+		                </span>
+	                    <div class="mdui-card-header-title">AirBee</div>
+	                    <div class="mdui-card-header-subtitle">2020-04-14</div>
+	                </div>
+	                <div class="mdui-col-xs-1" style="transform: translateY(-95%);">   
+	            	<a href="" class="mdui-btn mdui-btn-icon mdui-color-grey-100 mdui-ripple mdui-float-right"><i class="mdui-icon material-icons" style="color: #e0e0e0;">&#xe31c;</i></a>
+	                </div>
+			    </div>
+		  	</div>		
+		</div>
+		<br/>
+		</div>
+		
+<!--PE END-->
 
 
-    <div class="mdui-container">
+    <div class="mdui-container  mdui-hidden-xs-down">
       <div class="mdui-card mdui-shadow-4" style="border-radius: 15px;">
         <div class="mdui-card-content">
         <br/>
         <br/>
 
-		<div class="mdui-row">
-			
-		<!--课程表-->
-		  <div class="mdui-col-xs-12 mdui-col-sm-8">
-		  	<link rel="stylesheet" href="<?php echo((Usr_Tsc_PATH."/classTimeTable.css")); ?>">
-			    <div id="class-table" class="class-table">
-					<!--表头-->
-			        <div class="ct-header"></div>
-					<!--表格主体-->
-			        <div class="ct-body"></div>
+	<div class="mdui-row">
+		<div class="mdui-col-xs-12 mdui-col-sm-8">
+		  	<div class="mdui-card mdui-shadow-5 mdui-hoverable">
+		        <div class="mdui-card-primary">
+		          <div class="mdui-card-primary-title">女装从零到无数</div>
+		        </div>
+		    <div class="mdui-divider"></div> 
+			<div class="mdui-card-header" style="background-color: whitesmoke;">
+            	<div class="mdui-row">
+	                <div class="mdui-col-xs-11">   
+	                  <span itemprop="image">
+	                  <img class="mdui-card-header-avatar" src="https://s6.cccc.ac.cn/2020/02/27/b6b36f97f9ab3.png">
+	                  </span>
+	                  <div class="mdui-card-header-title">AirBee</div>
+	                  <div class="mdui-card-header-subtitle">2020-04-14</div>
+	                </div>
+	                <div class="mdui-col-xs-1" style="transform: translateY(-95%);">   
+	            	<a href="" class="mdui-btn mdui-btn-icon mdui-color-grey-100 mdui-ripple mdui-float-right"><i class="mdui-icon material-icons" style="color: #e0e0e0;">&#xe31c;</i></a>
+	                </div>
 			    </div>
-		  	<script src="<?php echo((Usr_Tsj_PATH."/classTimeTable.js")); ?>"></script>
-		  </div>
-		  
+		  	</div>		
+			</div>
+<BR/>
+		<div class="mdui-card mdui-shadow-5 mdui-hoverable">
+			<div class="mdui-card-primary">
+		    	<div class="mdui-card-primary-title">欢迎使用 AirBee</div>
+		    </div>
+		    <div class="mdui-divider"></div> 
+			<div class="mdui-card-header" style="background-color: whitesmoke;">
+            	<div class="mdui-row">
+	                <div class="mdui-col-xs-11">   
+		                <span itemprop="image">
+		                <img class="mdui-card-header-avatar" src="https://s6.cccc.ac.cn/2020/02/27/b6b36f97f9ab3.png">
+		                </span>
+	                    <div class="mdui-card-header-title">AirBee</div>
+	                    <div class="mdui-card-header-subtitle">2020-04-14</div>
+	                </div>
+	                <div class="mdui-col-xs-1" style="transform: translateY(-95%);">   
+	            	<a href="" class="mdui-btn mdui-btn-icon mdui-color-grey-100 mdui-ripple mdui-float-right"><i class="mdui-icon material-icons" style="color: #e0e0e0;">&#xe31c;</i></a>
+	                </div>
+			    </div>
+		  	</div>		
+		</div>
+<BR/>
+		</div>
+		
 		<!--模块卡片-->
-		  <div class="mdui-col-xs-6 mdui-col-sm-4 mdui-hidden-xs-down">
+		  <div class="mdui-col-sm-4 mdui-hidden-xs-down mdui-float-right">
 		  	<!--#1-->
 		  	<div class="mdui-card mdui-shadow-0" style=" border-radius: 13px; background-image: linear-gradient(to right, #434343 0%, black 100%);">
 		        <div class="mdui-card-primary">
@@ -192,12 +264,13 @@
 		        	
 		        </div>
 		  	</div>
-		  	<br/>
+		  	<br class="mdui-hidden-xs-down"/>
 		  	<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height=86 src="//music.163.com/outchain/player?type=2&id=34125094&auto=0&height=66"></iframe>
 		  	<br/>
 		  </div>
 		  
 		</div>
+		
 		
         </div>
       </div>

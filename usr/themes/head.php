@@ -8,7 +8,7 @@
 	    <link rel="stylesheet" href="//cdn.bootcss.com/mdui/0.4.3/css/mdui.min.css">
 	    <link rel="stylesheet" href="<?php echo((Usr_Tsc_PATH."/style.css")); ?>">
 	    <script src="//cdn.bootcss.com/mdui/0.4.3/js/mdui.min.js"></script>
-	    <!--<script>
+<!--<script>
 	window.onkeydown = window.onkeyup = window.onkeypress = function (event) {  
     // 判断是否按下F12，F12键码为123  
     if (event.keyCode = 123) {  
@@ -39,7 +39,10 @@
     window.onresize = function () {
         if (h != window.innerHeight || w != window.innerWidth) {
             window.close();
-            window.location = "about:blank";
+            window.opener = null;
+			window.open('', '_self');
+            //window.location = "about:blank";
+            //window.location = "https://www.bilibili.com/";
         }
     }
 </script>!-->

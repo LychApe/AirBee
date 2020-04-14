@@ -46,10 +46,7 @@
 
 <ul class="mdui-menu" id="menu">
     <li class="mdui-menu-item">
-        <a href="javascript:;" class="mdui-ripple">XJ女装门</a>
-    </li>
-    <li class="mdui-menu-item">
-        <a href="javascript:;" class="mdui-ripple">Help</a>
+        <a href="javascript:;" class="mdui-ripple">LychApe</a>
     </li>
 </ul>
 <script>
@@ -80,5 +77,4 @@
         }
     });
 </script>!-->
-
 
