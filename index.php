@@ -9,43 +9,20 @@ session_start();
 require_once("./var/PathM.php");
 AirBee_PathM::Go();
 
-#页面参数赋值_A01
 $page['body'] = 'mdui-drawer-body-left mdui-appbar-with-toolbar mdui-theme-primary-indigo mdui-theme-accent-pink';
 
-#路由
-if($_GET["User"]=="Register"){
-include("register.php");
-die();	
-}
-if($_GET["User"]=="Login"){
-include("login.php");
-die();	
-}
+include("routing.php");
 
 require(AirBee_PATH.'/AirBee/include/user.php');
 $user = new User();
-
-if($_GET["User"]=="Home"){
-	if(!$user->Check_Logon()){
-		header("location: ?User=Login");
-	}
-	$body = "home.php";
-	require(Usr_T_PATH.'/main.php');
-	die();	
-}
-if($_GET["App"]=="scoreger"){
-$body = (Usr_P_PATH.'/scoreger/scoreger.php');
-require(Usr_T_PATH.'/main.php');
-die();	
-}
-
 if(!$user->Check_Logon()){
     #页面参数赋值
 	$body = "notlogin.partial.php";
 	#载入模板
 	require(Usr_T_PATH.'/NotLogin/main.php');
 }
-if($user->Check_Group("guest")){
+if($user->Check_Group("guest") or $user->Check_Group("admin") or $user->Check_Group("root")){
     header("location: ?User=Home");
 }
+
 

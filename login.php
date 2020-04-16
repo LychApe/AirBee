@@ -10,7 +10,6 @@ ob_clean();
 require_once("./var/PathM.php");
 AirBee_PathM::Go();
 require(AirBee_PATH.'/AirBee/include/user.php');
-
 function login(){
     
     $user = new User();

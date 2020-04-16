@@ -90,19 +90,6 @@
             </div> 
        
           <div class="mdui-divider"></div>
-          
-            <a href="<?php echo $GLOBALS['url'] ?>/?App=comment">
-            <li class="mdui-list-item mdui-ripple">
-                <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-indigo">&#xe0b7;</i>
-                <span class="mdui-list-item-content mdui-text-color-theme-text">留言点滴</span>
-                <span class="mdui-list-item-avatar" style="background: -webkit-linear-gradient(to right, #654ea3, #eaafc8);">
-                    <?php 
-                    echo("0");
-                    //echo mysqli_num_rows( $ALLNUM );
-                    ?>
-                </span>
-            </li>
-            </a>
             
             
             <a>

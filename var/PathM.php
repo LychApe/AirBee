@@ -28,9 +28,11 @@
         #usr_PATH
         define('Usr_PATH', APP_PATH . 'usr');
             define('Usr_T_PATH', Usr_PATH . '/themes');
-              define('Usr_Tsc_PATH', Usr_T_PATH . '/Static/CSS');
-              define('Usr_Tsj_PATH', Usr_T_PATH . '/Static/JS');
-            define('Usr_P_PATH', Usr_PATH . '/plugins');
+              define('Usr_Ts_PATH', Usr_T_PATH . '/Static');
+            	define('Usr_Tsc_PATH', Usr_T_PATH . '/Static/CSS');
+            	define('Usr_Tsj_PATH', Usr_T_PATH . '/Static/JS');
+              define('Usr_TPanel_PATH', Usr_T_PATH . '/Panel');
+            define('Usr_M_PATH', Usr_PATH . '/modules');
         
         include(AirBee_PATH."/config.php");
     }

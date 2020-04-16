@@ -11,7 +11,6 @@ require_once("./var/PathM.php");
 AirBee_PathM::Go();
 require(AirBee_PATH.'/AirBee/include/db.php');
 require(AirBee_PATH.'/AirBee/include/user.php');
-
 function Register(){
 	
     $user = new User();
