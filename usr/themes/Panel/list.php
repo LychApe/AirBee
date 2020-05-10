@@ -9,10 +9,11 @@
     border-radius: 0px
     }
 </style>
+<header>
     <div class="mdui-drawer mdui-color-grey-50 " id="main-drawer" >
       <div class="mdui-list" mdui-collapse="{accordion:true}" style="margin-bottom: 76px;">
             
-      <div class="mdui-card FnB_IMG">
+      <div class="mdui-card FnB_IMG mdui-shadow-0">
         <div class="mdui-card-media">
           <img src="https://api.ixiaowai.cn/gqapi/gqapi.php"/>
           <div class="mdui-card-media-covered">
@@ -32,36 +33,108 @@
         </div>
       </div>
         
-            <a href="<?php echo $GLOBALS['url'] ?>/index.php">
+            <a href="<?php echo $GLOBALS['url'] ?>/?Panel=ACP">
               <li class="mdui-list-item mdui-ripple">
-                <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-light-blue">&#xe88a;</i>
-                <div class="mdui-list-item-content">首  页</div>
+                <div class="mdui-list-item-icon mdui-icon AirBee_Icon AirBee_Iconjiankong"></div>
+                <div class="mdui-list-item-content">控制台</div>
               </li>
             </a>
 
             <div class="mdui-collapse-item mdui-collapse-item-dense">
               <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
-                <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-deep-purple">account_box</i>
-                <div class="mdui-list-item-content">用  户</div>
+                <div class="mdui-list-item-icon mdui-icon AirBee_Icon AirBee_Iconicon-test"></div>
+                <div class="mdui-list-item-content">文章</div>
                 <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
               </div>
               
               <div class="mdui-collapse-item-body mdui-list">
-              	<?php if(!$user->Check_Logon()){ ?>
-                <a href="<?php echo $GLOBALS['url'] ?>/?User=Login">
+                <a href="<?php echo $GLOBALS['url'] ?>/?Panel=write">
                     <li class="mdui-list-item mdui-ripple">
-                        <div class="mdui-list-item-content">登陆</div>
-                  </li>
-                </a>
-                <a href="<?php echo $GLOBALS['url'] ?>/?User=Register">
-                    <li class="mdui-list-item mdui-ripple">
-                        <div class="mdui-list-item-content">注册</div>
+                        <div class="mdui-list-item-content">撰写文章</div>
                     </li>
                 </a>
-                <?php } else { ?>
+                <a href="<?php echo $GLOBALS['url'] ?>/?Panel=XXX">
+                    <li class="mdui-list-item mdui-ripple">
+                        <div class="mdui-list-item-content">文章列表</div>
+                    </li>
+                </a>
+                <a href="<?php echo $GLOBALS['url'] ?>/?Panel=XXX">
+                    <li class="mdui-list-item mdui-ripple">
+                        <div class="mdui-list-item-content">分类目录</div>
+                    </li>
+                </a>
+              </div>
+            </div>
+
+            <div class="mdui-collapse-item mdui-collapse-item-dense">
+              <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                <div class="mdui-list-item-icon mdui-icon AirBee_Icon AirBee_Icondeploymentunit"></div>
+                <div class="mdui-list-item-content">模块</div>
+                <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+              </div>
+              
+              <div class="mdui-collapse-item-body mdui-list">
+                <a href="<?php echo $GLOBALS['url'] ?>/?Panel=XXX">
+                    <li class="mdui-list-item mdui-ripple">
+                        <div class="mdui-list-item-content">模块管理</div>
+                    </li>
+                </a>
+              </div>
+              <div class="mdui-collapse-item-body mdui-list">
+                <a href="<?php echo $GLOBALS['url'] ?>/?Panel=XXX">
+                    <li class="mdui-list-item mdui-ripple">
+                        <div class="mdui-list-item-content">模块商店</div>
+                    </li>
+                </a>
+              </div>
+              
+            </div>
+
+            <div class="mdui-collapse-item mdui-collapse-item-dense">
+              <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                <div class="mdui-list-item-icon mdui-icon AirBee_Icon AirBee_Iconrocket"></div>
+                <div class="mdui-list-item-content">管家</div>
+                <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+              </div>
+              
+              <div class="mdui-collapse-item-body mdui-list">
+                <a href="<?php echo $GLOBALS['url'] ?>/?Panel=XXX">
+                    <li class="mdui-list-item mdui-ripple">
+                        <div class="mdui-list-item-content">scoreger</div>
+                  </li>
+                </a>
+              </div>
+            </div>
+            
+            <div class="mdui-collapse-item mdui-collapse-item-dense">
+              <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                <div class="mdui-list-item-icon mdui-icon AirBee_Icon AirBee_Iconexperiment"></div>
+                <div class="mdui-list-item-content">实验室</div>
+                <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+              </div>
+              
+              <div class="mdui-collapse-item-body mdui-list">
+                <a href="<?php echo $GLOBALS['url'] ?>/?Panel=XXX">
+                    <li class="mdui-list-item mdui-ripple">
+                        <div class="mdui-list-item-content">scoreger</div>
+                  </li>
+                </a>
+              </div>
+            </div> 
+            
+            <div class="mdui-divider"></div>
+            
+            <div class="mdui-collapse-item mdui-collapse-item-dense">
+              <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                <div class="mdui-list-item-icon mdui-icon AirBee_Icon AirBee_Iconsmile"></div>
+                <div class="mdui-list-item-content">个人中心</div>
+                <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+              </div>
+              
+              <div class="mdui-collapse-item-body mdui-list">
                 <a href="<?php echo $GLOBALS['url'] ?>/?User==xxx">
                     <li class="mdui-list-item mdui-ripple">
-                        <div class="mdui-list-item-content">用户信息</div>
+                        <div class="mdui-list-item-content">个人信息</div>
                   </li>
                 </a>
                 <a href="<?php echo $GLOBALS['url'] ?>/logout.php">
@@ -69,14 +142,13 @@
                         <div class="mdui-list-item-content">安全退出</div>
                     </li>
                 </a>                
-                <?php } ?>  
               </div>
             </div>
             
             <div class="mdui-collapse-item mdui-collapse-item-dense">
               <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
-                <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-deep-purple">apps</i>
-                <div class="mdui-list-item-content">应 用</div>
+                <div class="mdui-list-item-icon mdui-icon AirBee_Icon AirBee_Iconhezuohuobanmiyueguanli"></div>
+                <div class="mdui-list-item-content">用户管控</div>
                 <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
               </div>
               
@@ -87,17 +159,18 @@
                   </li>
                 </a>
               </div>
-            </div> 
+            </div>
        
           <div class="mdui-divider"></div>
             
             
             <a>
     		  <li class="mdui-list-item mdui-ripple" mdui-dialog="{target:'#ABOUT_AirBee'}">
-				<i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-brown">info_outline</i>
+				<i class="mdui-list-item-icon mdui-icon material-icons">info_outline</i>
 				<div class="mdui-list-item-content">ABOUT</div>
 			  </li>
 			</a>
     
         </div>
       </div>
+</header>

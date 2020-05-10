@@ -10,6 +10,8 @@
     font-weight: 300;
     font-size: 15px;
     line-height: 25px;
+    bottom: 0;
+    position: inherit;
 }
 .foot.AB-footer-morden {
     padding: 30px 0;
@@ -17,19 +19,19 @@
 </style>
 <!--右下悬浮按钮-->
   <div class="mdui-fab-wrapper" mdui-fab="{trigger: 'hover'}">
-    <button class="mdui-fab mdui-ripple mdui-color-theme-accent">
-      <i class="mdui-icon material-icons">&#xe145;</i>
+    <button class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-grey-50">
+      <i class="mdui-icon material-icons">&#xe1b7;</i>
       <i class="mdui-icon mdui-fab-opened material-icons">&#xe14c;</i></button>
       <div class="mdui-fab-dial">
-        <a href="#top" class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-pink" id="myBtn">
+        <a href="#top" class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-grey-50" id="myBtn">
           <i class="mdui-icon material-icons">&#xe5d8;</i></a>
-          <a href="#" class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-pink">
-            <i class="mdui-icon material-icons">&#xe243;</i></a>
+          <a href="#" class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-grey-50">
+            <i class="mdui-icon material-icons">&#xe028;</i></a>
       </div>
   </div>
 <footer class="foot mdui-text-center  AB-footer-morden">
 	<div class="mdui-typo">
-	Copyright © 2020 <a href="https://www.lychape.cn">LychApe Studios</a>
+	Copyright © 2020 <a href="https://www.lychape.cn">LychApe</a>
 	</div>
 	Powered by AirBee 0.1
 	<br/>
@@ -55,14 +57,6 @@ $$('#ERRO-404').on('click', function () {
     position: 'right-top'
   });
 });
-// 当网页向下滑动 30px 出现"返回顶部" 按钮
-function scrollFunction() {console.log(121);
-    if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
-        document.getElementById("myBtn").style.display = "block";
-    } else {
-        document.getElementById("myBtn").style.display = "none";
-    }
-}
 </script>
 
 <div class="mdui-dialog" id="ABOUT_AirBee">

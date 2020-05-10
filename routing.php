@@ -43,7 +43,8 @@
 			header("location: ?User=Login");
 		}
 		if($user->Check_Group("root") or $user->Check_Group("admin")){
-		    echo("ok");
+		    $body = "write.php";
+		    require(Usr_TPanel_PATH.'/main.php');
 		}elseif ($user->Check_Group("guest")) {
 			header("location: ?User=Home");
 		}
